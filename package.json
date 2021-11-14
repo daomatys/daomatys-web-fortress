@@ -1,0 +1,24 @@
+{
+  "name": "daomatys-web-fortress",
+  "version": "1.0.0",
+  "description": "My own website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daomatys/daomatys-web-fortress.git"
+  },
+  "keywords": [
+    "typescript",
+    "pug",
+    "scss"
+  ],
+  "author": "daomatys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daomatys/daomatys-web-fortress/issues"
+  },
+  "homepage": "https://github.com/daomatys/daomatys-web-fortress#readme"
+}
