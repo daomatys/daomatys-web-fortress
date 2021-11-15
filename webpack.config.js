@@ -101,16 +101,15 @@ module.exports = {
       template: `${PAGES_DIR[index]}/${page}`,
       filename: `./${page.replace(/\.pug/,'.html')}`
     })),
+    new webpack.ContextReplacementPlugin(
+      /angular(\\|\/)core/,
+      path.resolve(__dirname, 'src'),
+      {}
+    ),
     new MiniCssExtractPlugin({
-      filename: 'index.css',
+      filename: 'index.css'
     }),
     new CssMinimizerPlugin(),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.$': 'jquery',
-      'window.jQuery': 'jquery'
-    }),
     //new CleanWebpackPlugin()
   ],
 
@@ -122,8 +121,7 @@ module.exports = {
 
   resolve: {
     alias: {
-      '@variables': path.resolve(__dirname, 'src/variables/variables.scss'),
-      '@images': path.resolve(__dirname, 'src/assets/images/')
+      '@variables': path.resolve(__dirname, 'src/variables/variables.scss')
     }
   }
 }
