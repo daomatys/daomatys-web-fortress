@@ -49,6 +49,18 @@ module.exports = {
 
   module: {
     rules: [
+        {
+          test: /\.ts$/,
+          use: [
+            {
+              loader: 'ts-loader',
+              options: {
+                configFile: path.resolve(__dirname, 'tsconfig.json')
+              }
+            },
+            'angular2-template-loader'
+          ]
+      },
       {
         test: /\.pug$/,
         loader: 'pug-loader',
