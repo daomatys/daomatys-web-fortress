@@ -42,6 +42,13 @@ module.exports = {
     app: PATHS.src,
   },
 
+  resolve: {
+    extensions: ['.ts', '.js'],
+    alias: {
+      '@variables': path.resolve(__dirname, 'src/variables/variables.scss')
+    }
+  },
+
   output: {
     filename: 'index.js',
     path: PATHS.dist
@@ -49,17 +56,18 @@ module.exports = {
 
   module: {
     rules: [
-        {
-          test: /\.ts$/,
-          use: [
-            {
-              loader: 'ts-loader',
-              options: {
-                configFile: path.resolve(__dirname, 'tsconfig.json')
-              }
-            },
-            'angular2-template-loader'
-          ]
+      {
+        test: /\.ts$/,
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              configFile: path.resolve(__dirname, 'tsconfig.json')
+            }
+          },
+          'angular2-template-loader'
+        ],
+        exclude: /node_modules/
       },
       {
         test: /\.pug$/,
@@ -110,7 +118,7 @@ module.exports = {
       filename: 'index.css'
     }),
     new CssMinimizerPlugin(),
-    //new CleanWebpackPlugin()
+    new CleanWebpackPlugin()
   ],
 
   optimization: {
@@ -118,10 +126,4 @@ module.exports = {
       new CssMinimizerPlugin(),
     ],
   },
-
-  resolve: {
-    alias: {
-      '@variables': path.resolve(__dirname, 'src/variables/variables.scss')
-    }
-  }
 }
