@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Link } from '../link/__interface/link__interface';
 
+import linksBulk from './__links-bulk/header__links-bulk';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,16 +10,7 @@ import { Link } from '../link/__interface/link__interface';
 })
 export class HeaderComponent implements OnInit {
 
-  public links: Link [] = [
-    {
-      href: 'xxx',
-      text: 'portfolio'
-    },
-    {
-      href: 'yyy',
-      text: 'hyufolio'
-    },
-  ]
+  public links: Link[] = linksBulk;
 
   constructor() { }
 
