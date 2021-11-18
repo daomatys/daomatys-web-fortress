@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Link } from '../link/__interface/link__interface';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  public links: object [] = [
+  public links: Link [] = [
     {
       href: 'xxx',
       text: 'portfolio'
