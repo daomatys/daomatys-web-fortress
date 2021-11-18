@@ -1,4 +1,6 @@
 header.app-header
   .app-header__navbar
-    app-link( *ngFor='let link of links' )
+    ng-container( *ngFor="let link of links" )
+      app-link( [link]="link" )
+      .testhui
   
