@@ -5,41 +5,21 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^16.11.7",
-    "@types/webpack-env": "^1.16.3",
-    "angular2-template-loader": "^0.6.2",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "css-loader": "^6.2.0",
-    "css-minimizer-webpack-plugin": "^3.1.1",
     "eslint": "^8.2.0",
     "eslint-plugin-fsd": "^1.0.1",
-    "html-webpack-plugin": "^5.3.2",
-    "mini-css-extract-plugin": "^2.4.2",
-    "node-sass": "^6.0.1",
     "pug": "^3.0.2",
-    "pug-loader": "^2.4.0",
-    "sass-loader": "^12.1.0",
     "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-scss": "^3.21.0",
-    "ts-loader": "^9.2.6",
-    "typescript": "^4.4.4",
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.3.1"
+    "typescript": "^4.4.4"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode=development --watch",
-    "prod": "webpack --mode=production",
-    "try": "webpack --mode=development",
-    "host": "webpack serve"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daomatys/daomatys-web-fortress.git"
   },
   "keywords": [
+    "angular",
     "typescript",
     "pug",
     "scss"
