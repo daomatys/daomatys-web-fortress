@@ -1,5 +1,7 @@
+@import '/src/variables/variables.scss';
+
 .app-link {
   font-family: Neonize;
   font-size: 2rem;
-  color: #6f00ff
+  color: $color_corn-harvest;
 }

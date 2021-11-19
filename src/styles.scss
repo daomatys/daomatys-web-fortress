@@ -1,4 +1,6 @@
+@import '/src/variables/variables.scss';
+
 body {
-  background-image: url('./assets/images/bg-main.jpg');
+  background-color: $color_deep-teal;
   margin: 0;
 }
