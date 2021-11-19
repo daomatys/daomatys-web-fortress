@@ -1,7 +1,10 @@
 @import '/src/variables/variables.scss';
 
 body {
-  background-image: $gradient_primary;
   margin: 0;
+}
+
+main {
+  background-image: $gradient_primary;
   height: 100vh;
 }
