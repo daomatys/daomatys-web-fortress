@@ -1,10 +1,14 @@
 export default [
   {
     href: 'xxx',
-    text: 'about'
+    text: 'resume'
   },
   {
     href: 'yyy',
     text: 'portfolio'
   },
+  {
+    href: 'zzz',
+    text: 'career'
+  }
 ]

@@ -4,6 +4,20 @@ body {
   margin: 0;
 }
 
+header,
+main,
+footer {
+  padding-inline: 5%;
+  width: 90%;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 main {
   background-image: $gradient_primary;
   height: 100vh;
