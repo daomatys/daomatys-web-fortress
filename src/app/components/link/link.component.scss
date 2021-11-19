@@ -1,7 +1,8 @@
 @import '/src/variables/variables.scss';
+@import '/src/assets/fonts/neonize/fonts.scss';
 
 .app-link {
   font-family: Neonize;
   font-size: 2rem;
-  color: $color_corn-harvest;
+  color: $color_secondary;
 }
