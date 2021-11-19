@@ -1,14 +1,20 @@
 @import '/src/variables/variables.scss';
 
+$headerInnerGap: 20px;
+
 .app-header {
   height: 128px;
   background-color: $color_primary;
 
+  &__logo {
+    cursor: crosshair;
+  }
+
   &__navbar {
     display: flex;
     justify-content: space-between;
-    margin-left: 5vw;
-    width: 100%;
-    gap: 20px;
+    width: 41vw;
+    margin-left: $headerInnerGap;
+    gap: $headerInnerGap;
   }
 }
