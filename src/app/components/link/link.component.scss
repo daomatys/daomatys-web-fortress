@@ -6,4 +6,9 @@
   font-size: calcRelativeFontSize( 36 );
   color: $color_black;
   text-decoration: none;
+  transition: color .3s ease;
+
+  &:hover {
+    color: $color_pohutukawa;
+  }
 }
