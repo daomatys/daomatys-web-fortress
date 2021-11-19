@@ -8,7 +8,7 @@ $color_black: #000;
 $color_primary: #022F25;
 $color_secondary: $color_corn-harvest;
 
-//gradients section
+//gradients
 @function defineGradient( $primary, $secondary ) {
   @return linear-gradient(180deg, $primary 0%, $secondary 100%);
 }
