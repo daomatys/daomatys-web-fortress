@@ -1,6 +1,7 @@
 @import '/src/variables/variables.scss';
 
 body {
-  background-color: $color_primary;
+  background-image: $gradient_primary;
   margin: 0;
+  height: 100vh;
 }

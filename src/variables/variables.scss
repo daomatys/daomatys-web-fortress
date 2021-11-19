@@ -2,7 +2,14 @@
 $color_deep-teal: #074839;
 $color_corn-harvest: #8f773d;
 $color_pohutukawa: #640A25;
+$color_black: #000;
 
 //project chosen shades
 $color_primary: #022F25;
 $color_secondary: $color_corn-harvest;
+
+//gradients section
+@function defineGradient( $primary, $secondary ) {
+  @return linear-gradient(180deg, $primary 0%, $secondary 100%);
+}
+$gradient_primary: defineGradient( $color_primary, $color_black );
