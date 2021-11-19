@@ -1,0 +1,7 @@
+@import '/src/variables/variables.scss';
+@import '/src/assets/fonts/razer-blackwidow/fonts.scss';
+
+%text-style_h1 {
+  font-family: Razer-Blackwidow-Regular;
+  font-size: calcRelativeFontSize( 36 );
+}

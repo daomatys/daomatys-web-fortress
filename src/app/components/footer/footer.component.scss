@@ -1,6 +1,12 @@
 @import '/src/variables/variables.scss';
+@import '/src/styles/__text/_h1/styles__text_h1.scss';
 
 .app-footer {
   height: 150px;
   background-color: $color_black;
+  color: $color_secondary;
+
+  &__proposal {
+    @extend %text-style_h1;
+  }
 }
