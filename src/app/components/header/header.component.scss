@@ -1,5 +1,4 @@
 @import '/src/variables/variables.scss';
-@import '/src/assets/fonts/neonize/fonts.scss';
 
 .app-header {
   height: 128px;
@@ -7,7 +6,8 @@
 
   &__navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 6vw;
     width: 100%;
     gap: 20px;
   }
