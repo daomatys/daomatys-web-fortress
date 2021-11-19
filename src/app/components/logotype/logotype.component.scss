@@ -2,6 +2,6 @@
 
 .app-logotype {
   font-family: Neonize;
-  font-size: 3rem;
+  font-size: calcRelativeFontSize( 48 );
   color: $color_secondary;
 }

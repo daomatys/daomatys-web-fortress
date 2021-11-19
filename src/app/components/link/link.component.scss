@@ -3,6 +3,6 @@
 
 .app-link {
   font-family: Razer-Blackwidow-Regular;
-  font-size: 2rem;
+  font-size: calcRelativeFontSize( 36 );
   color: $color_black;
 }

@@ -13,3 +13,8 @@ $color_secondary: $color_corn-harvest;
   @return linear-gradient(180deg, $primary 0%, $secondary 100%);
 }
 $gradient_primary: defineGradient( $color_primary, $color_black );
+
+//font auto-sizer
+@function calcRelativeFontSize( $value ) {
+  @return #{$value / 16}rem;
+}
