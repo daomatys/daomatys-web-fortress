@@ -1,7 +1,7 @@
+- const items = [ 'faPhoneSquare', 'faEnvelopeSquare', 'faGithub', 'faTelegram' ]
+
 footer.app-footer
   .app-footer__proposal ...so call me, maybe ?
   .app-footer__social-icons
-    fa-icon( [icon]='faPhoneSquare' )
-    fa-icon( [icon]='faEnvelopeSquare' )
-    fa-icon( [icon]='faGithub' )
-    fa-icon( [icon]='faTelegram' )
+    each item in items
+      fa-icon( [icon]=item )
