@@ -1,2 +1,6 @@
-a.app-social-icon( href="{{socialIcon?.href}}" )
-  fa-icon( [icon]="icon" )
+a.app-social-icon(
+  href="{{socialIcon?.href}}"
+  target="_blank"
+  rel="noopener noreferrer"
+)
+  fa-icon( [icon]="socialIcon?.definition" )

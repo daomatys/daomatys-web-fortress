@@ -1,18 +1,21 @@
+import { faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
+
 export default [
   {
     href: 'https://github.com/daomatys',
-    code: 'faGithub'
+    definition: faGithub
   },
   {
     href: 'tel: +7 952 890-10-23',
-    code: 'faPhoneSquare'
+    definition: faPhoneSquare
   },
   {
     href: 'mailto: overmaxcoast@yandex.ru',
-    code: 'faEnvelopeSquare'
+    definition: faEnvelopeSquare
   },
   {
     href: 'https://t.me/daomatysss',
-    code: 'faTelegram'
+    definition: faTelegram
   }
 ]
