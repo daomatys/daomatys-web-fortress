@@ -10,17 +10,23 @@ import { SocialIconInterface } from '../social-icon/__interface/social-icon__int
   templateUrl: './social-icon.component.html',
   styleUrls: ['./social-icon.component.scss']
 })
-export class SocialIconComponent implements OnInit {
-  faGithub = faGithub;
-  faTelegram = faTelegram;
-  faEnvelopeSquare = faEnvelopeSquare;
-  faPhoneSquare = faPhoneSquare;
 
+export class SocialIconComponent implements OnInit {
   @Input() socialIcon: SocialIconInterface;
 
-  constructor() { }
+  icon = '';
+  icons = {
+    "faGithub": faGithub,
+    "faTelegram": faTelegram,
+    "faEnvelopeSquare": faEnvelopeSquare,
+    "faPhoneSquare": faPhoneSquare
+  };
 
-  ngOnInit() {
+  constructor() {
+
   }
 
+  ngOnInit() {
+    this.icon = this.icons[this.socialIcon?.code];
+  }
 }

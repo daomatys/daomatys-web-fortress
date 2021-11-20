@@ -27,4 +27,4 @@ import { SocialIconComponent } from './components/social-icon/social-icon.compon
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
