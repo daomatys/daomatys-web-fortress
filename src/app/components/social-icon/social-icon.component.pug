@@ -1,6 +1,6 @@
 a.app-social-icon(
   href="{{socialIcon?.href}}"
-  target="_blank"
-  rel="noopener noreferrer"
+  target="{{iconTarget}}"
+  rel="{{iconRel}}"
 )
   fa-icon( [icon]="socialIcon?.definition" )
