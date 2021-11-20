@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LinkInterface } from '../link/__interface/link__interface';
 
-import linksBulk from './__links-bulk/header__links-bulk';
+import linksItems from './__items-links/header__items-links';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +10,7 @@ import linksBulk from './__links-bulk/header__links-bulk';
 })
 export class HeaderComponent implements OnInit {
 
-  public links: LinkInterface[] = linksBulk;
+  public links: LinkInterface[] = linksItems;
 
   constructor() { }
 
