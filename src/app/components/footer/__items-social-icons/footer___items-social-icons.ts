@@ -1,18 +1,18 @@
 export default [
   {
-    href: '',
+    href: 'https://github.com/daomatys',
     code: 'faGithub'
   },
   {
-    href: '',
+    href: 'tel: +7 952 890-10-23',
     code: 'faPhoneSquare'
   },
   {
-    href: '',
+    href: 'mailto: overmaxcoast@yandex.ru',
     code: 'faEnvelopeSquare'
   },
   {
-    href: '',
+    href: 'https://t.me/daomatysss',
     code: 'faTelegram'
   }
 ]
