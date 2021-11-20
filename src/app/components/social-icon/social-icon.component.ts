@@ -11,12 +11,12 @@ import { SocialIconInterface } from '../social-icon/__interface/social-icon__int
   styleUrls: ['./social-icon.component.scss']
 })
 export class SocialIconComponent implements OnInit {
-  @Input() socialIcon: SocialIconInterface;
-
   faGithub = faGithub;
   faTelegram = faTelegram;
   faEnvelopeSquare = faEnvelopeSquare;
   faPhoneSquare = faPhoneSquare;
+
+  @Input() socialIcon: SocialIconInterface;
 
   constructor() { }
 
