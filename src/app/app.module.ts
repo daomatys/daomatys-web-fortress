@@ -8,6 +8,7 @@ import { LinkComponent } from './components/link/link.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LogotypeComponent } from './components/logotype/logotype.component';
+import { SocialIconComponent } from './components/social-icon/social-icon.component';
 
 @NgModule({
   declarations: [			
@@ -15,7 +16,8 @@ import { LogotypeComponent } from './components/logotype/logotype.component';
       HeaderComponent,
       FooterComponent,
       LinkComponent,
-      LogotypeComponent
+      LogotypeComponent,
+      SocialIconComponent
    ],
   imports: [
     BrowserModule,
