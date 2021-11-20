@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import { LinkInterface } from './__interface/link__interface';
 
 @Component({

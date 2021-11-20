@@ -1,7 +1,5 @@
-- const items = [ 'faPhoneSquare', 'faEnvelopeSquare', 'faGithub', 'faTelegram' ]
-
 footer.app-footer
   .app-footer__proposal ...so call me, maybe ?
   .app-footer__social-icons
-    each item in items
-      fa-icon( [icon]=item )
+    ng-container( *ngFor="let socialIcon of socialIcons" )
+      app-social-icon( [socialIcon]="socialIcon" )
