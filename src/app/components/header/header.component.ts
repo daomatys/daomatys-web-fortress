@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Link } from '../link/__interface/link__interface';
+import { LinkInterface } from '../link/__interface/link__interface';
 
 import linksBulk from './__links-bulk/header__links-bulk';
 
@@ -10,7 +10,7 @@ import linksBulk from './__links-bulk/header__links-bulk';
 })
 export class HeaderComponent implements OnInit {
 
-  public links: Link[] = linksBulk;
+  public links: LinkInterface[] = linksBulk;
 
   constructor() { }
 

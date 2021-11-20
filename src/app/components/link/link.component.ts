@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Link } from './__interface/link__interface';
+import { LinkInterface } from './__interface/link__interface';
 
 @Component({
   selector: 'app-link',
@@ -8,7 +8,7 @@ import { Link } from './__interface/link__interface';
 })
 export class LinkComponent implements OnInit {
 
-  @Input() link: Link;
+  @Input() link: LinkInterface;
 
   constructor() { }
 
