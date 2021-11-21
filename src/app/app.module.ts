@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; 
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -15,23 +16,31 @@ import { LinkComponent } from './components/link/link.component';
 import { LogotypeComponent } from './components/logotype/logotype.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 
+const appRoutes: Routes = [
+  { path: '',          component: Main__defaultComponent   },
+  { path: 'careers',   component: Main__careersComponent   },
+  { path: 'resume',    component: Main__resumeComponent    },
+  { path: 'portfolio', component: Main__portfolioComponent }
+];
+
 @NgModule({
   declarations: [			
     AppComponent,
-      HeaderComponent,
-      Main__careersComponent,
-      Main__defaultComponent,
-      Main__portfolioComponent,
-      Main__resumeComponent,
-      FooterComponent,
-      LinkComponent,
-      LogotypeComponent,
-      SocialIconComponent
+    HeaderComponent,
+    Main__careersComponent,
+    Main__defaultComponent,
+    Main__portfolioComponent,
+    Main__resumeComponent,
+    FooterComponent,
+    LinkComponent,
+    LogotypeComponent,
+    SocialIconComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
