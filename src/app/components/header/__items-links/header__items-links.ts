@@ -9,6 +9,6 @@ export default [
   },
   {
     href: 'zzz',
-    text: 'career'
+    text: 'careers'
   }
 ]
