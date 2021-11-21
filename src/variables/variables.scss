@@ -16,7 +16,7 @@ $hue_link-hover: $pohutukawa;
 $hue_text-light: $barley-corn;
 
 //gradients
-$gradient_primary: defineGradient( $dark-green, $black );
+$gradient_primary: defineGradient( $hue_main-light, $hue_main-dark );
 
 //functions
 @function defineGradient( $primary, $secondary ) {
