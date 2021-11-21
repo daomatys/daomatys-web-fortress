@@ -3,11 +3,6 @@
 
 .app-footer {
   &__section {
-    &_upper {
-      width: 100%;
-      max-height: 100%;
-    }
-
     &_lower {
       height: 150px;
       background-color: $hue_main-dark;
@@ -16,8 +11,8 @@
   }
 
   &__forest {
+    display: block;
     width: 100%;
-    margin: 0;
   }
 
   &__proposal {

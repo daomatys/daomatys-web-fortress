@@ -19,7 +19,6 @@ header,
 }
 
 main {
-  background-image: $gradient_primary;
-  height: 100vh;
-  padding-top: 20px
+  background-color: $hue_main-light;
+  padding-block: 20px;
 }
