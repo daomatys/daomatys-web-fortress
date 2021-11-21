@@ -6,13 +6,13 @@ body {
 
 header,
 main,
-.app-footer__content {
+.app-footer__section_lower {
   padding-inline: 9%;
   width: 82%;
 }
 
 header,
-footer {
+.app-footer__section_lower {
   display: flex;
   align-items: center;
   justify-content: space-between;

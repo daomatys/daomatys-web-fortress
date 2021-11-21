@@ -2,9 +2,23 @@
 @import '/src/styles/__text/_h1/styles__text_h1.scss';
 
 .app-footer {
-  height: 150px;
-  background-color: $hue_main-dark;
-  color: $hue_title-light;
+  &__section {
+    &_upper {
+      width: 100%;
+      max-height: 100%;
+    }
+
+    &_lower {
+      height: 150px;
+      background-color: $hue_main-dark;
+      color: $hue_title-light;
+    }
+  }
+
+  &__forest {
+    width: 100%;
+    margin: 0;
+  }
 
   &__proposal {
     @extend %text-style_h1;
