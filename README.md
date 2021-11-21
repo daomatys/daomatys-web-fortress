@@ -13,9 +13,9 @@ Run `npm run host` for a dev server.  Navigate to `http://localhost:4200/`. The 
 
 ## Pug semi- and automatic template renderer
 
-Run `npm run phost` for automatic rendering of an existing templates.  The app will automatically reload if you change any of already existing pug files.
+Run `npm run phost` to enable automatic rendering of **existing** templates on-the-fly.
 
-Run `npm run pgen` to render both new and existing template once upon a time.
+Run `npm run pgen` to render both new and existing templates once.
 
 
 ## Code scaffolding
