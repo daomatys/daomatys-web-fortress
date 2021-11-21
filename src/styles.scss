@@ -6,7 +6,7 @@ body {
 
 header,
 main,
-footer {
+.app-footer__content {
   padding-inline: 9%;
   width: 82%;
 }
@@ -21,4 +21,5 @@ footer {
 main {
   background-image: $gradient_primary;
   height: 100vh;
+  padding-top: 20px
 }

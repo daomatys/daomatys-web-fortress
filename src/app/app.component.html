@@ -1,4 +1,9 @@
 
 <app-header></app-header>
-<main>ya snova zhivu</main>
+<main>
+  <app-main__default *ngIf="true"></app-main__default>
+  <app-main__resume *ngIf="false"></app-main__resume>
+  <app-main__portfolio *ngIf="false"></app-main__portfolio>
+  <app-main__careers *ngIf="false"></app-main__careers>
+</main>
 <app-footer></app-footer>
