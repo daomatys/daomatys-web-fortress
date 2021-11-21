@@ -3,8 +3,8 @@
 
 .app-footer {
   height: 150px;
-  background-color: $color_black;
-  color: $color_secondary;
+  background-color: $hue_main-dark;
+  color: $hue_title-light;
 
   &__proposal {
     @extend %text-style_h1;

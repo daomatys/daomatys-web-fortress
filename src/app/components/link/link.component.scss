@@ -3,11 +3,11 @@
 
 .app-link {
   @extend %text-style_h1;
-  color: $color_black;
+  color: $hue_main-dark;
   text-decoration: none;
   transition: color .3s ease;
 
   &:hover {
-    color: $color_pohutukawa;
+    color: $hue_link-hover;
   }
 }
