@@ -28,8 +28,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/app/components/footer/__image/footer__image.svg"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
