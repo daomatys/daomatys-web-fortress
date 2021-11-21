@@ -1,14 +1,11 @@
 export default [
   {
-    href: '/resume',
-    text: 'resume'
+    route: 'resume'
   },
   {
-    href: '/portfolio',
-    text: 'portfolio'
+    route: 'portfolio'
   },
   {
-    href: '/careers',
-    text: 'careers'
+    route: 'careers'
   }
 ]
