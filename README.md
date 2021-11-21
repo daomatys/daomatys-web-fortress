@@ -8,7 +8,7 @@ This project was generated with:
 
 ## Development server
 
-Run `npm run host` for a dev server.  Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run host` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
 ## Pug semi- and automatic template renderer
