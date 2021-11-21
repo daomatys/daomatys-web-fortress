@@ -1,8 +1,8 @@
 @import '/src/variables/variables.scss';
-@import '/src/styles/__text/_h1/styles__text_h1.scss';
+@import '/src/styles/__text/styles__text.scss';
 
 .app-link {
-  @extend %text-style_h1;
+  @extend %styles__text_h2;
   color: $hue_title-dark;
   text-decoration: none;
   transition: color .3s ease;
