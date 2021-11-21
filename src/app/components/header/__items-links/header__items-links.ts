@@ -1,14 +1,14 @@
 export default [
   {
-    href: 'xxx',
+    href: '/resume',
     text: 'resume'
   },
   {
-    href: 'yyy',
+    href: '/portfolio',
     text: 'portfolio'
   },
   {
-    href: 'zzz',
+    href: '/careers',
     text: 'careers'
   }
 ]
