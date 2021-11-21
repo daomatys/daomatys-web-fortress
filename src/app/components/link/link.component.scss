@@ -3,12 +3,12 @@
 
 .app-link {
   @extend %styles__text_h2;
-  color: $hue_title-dark;
+  color: $hue_link-dark;
   text-decoration: none;
   transition: color .3s ease;
 
   &:hover,
   &_active {
-    color: $hue_link-hover;
+    color: $hue_link-active;
   }
 }
