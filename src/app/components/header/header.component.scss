@@ -1,10 +1,8 @@
 @import '/src/variables/variables.scss';
-@import '/src/styles/__structures/styles__structures.scss';
 
 $headerInnerGap: 20px;
 
 .header {
-  @extend %structure_flex-between;
   height: 128px;
   background-color: $hue_main-light;
 

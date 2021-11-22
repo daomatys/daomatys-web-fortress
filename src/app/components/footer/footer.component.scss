@@ -1,9 +1,7 @@
 @import '/src/variables/variables.scss';
 @import '/src/styles/__text/styles__text.scss';
-@import '/src/styles/__structures/styles__structures.scss';
 
 .footer {
-  @extend %structure_flex-between;
   @extend %styles__text_h1;
   height: 150px;
   background-color: $hue_main-dark;
