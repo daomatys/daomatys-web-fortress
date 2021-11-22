@@ -2,8 +2,10 @@ import { trigger, state, query, group, style, transition, animate, animateChild 
 
 export const mainHeightAnimation:any =
   trigger('routeAnimations', [
-    transition('HomePage <=> AboutPage', [
+    transition('DefaultPage <=> ResumePage', [
+
       style({ position: 'relative' }),
+
       query(':enter, :leave', [
         style({
           position: 'absolute',
@@ -12,23 +14,31 @@ export const mainHeightAnimation:any =
           width: '100%'
         })
       ]),
+
       query(':enter', [
         style({ left: '-100%' })
       ]),
+
       query(':leave', animateChild()),
+
       group([
         query(':leave', [
           animate('300ms ease-out', style({ left: '100%' }))
         ]),
+
         query(':enter', [
           animate('300ms ease-out', style({ left: '0%' }))
         ])
       ]),
+      
       query(':enter', animateChild()),
     ]),
 
-    transition('* <=> FilterPage', [
+
+    transition('* <=> CareersPage', [
+
       style({ position: 'relative' }),
+
       query(':enter, :leave', [
         style({
           position: 'absolute',
@@ -37,18 +47,23 @@ export const mainHeightAnimation:any =
           width: '100%'
         })
       ]),
+
       query(':enter', [
         style({ left: '-100%' })
       ]),
+
       query(':leave', animateChild()),
+
       group([
         query(':leave', [
           animate('200ms ease-out', style({ left: '100%' }))
         ]),
+
         query(':enter', [
           animate('300ms ease-out', style({ left: '0%' }))
         ])
       ]),
+
       query(':enter', animateChild()),
     ])
   ]);
