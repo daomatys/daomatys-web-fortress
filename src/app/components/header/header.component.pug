@@ -1,5 +1,6 @@
-.app-header__logo
-  app-logotype
-.app-header__navbar
-  ng-container( *ngFor="let link of links" )
-    app-link( [link]="link" )
+header.header
+  .header__logo
+    app-logotype
+  .header__navbar
+    ng-container( *ngFor="let link of links" )
+      app-link( [link]="link" )

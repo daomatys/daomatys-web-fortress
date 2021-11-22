@@ -1,3 +1,17 @@
+@import '/src/variables/variables.scss';
+
 body {
   margin: 0;
+}
+
+header,
+main,
+footer{
+  padding-inline: 9%;
+  width: 82%;
+}
+
+main {
+  background-color: $hue_main-light;
+  padding-block: 20px;
 }
