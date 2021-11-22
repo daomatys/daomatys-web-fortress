@@ -5,4 +5,6 @@ main {
   @extend %structures__padding;
   background-color: $hue_main-light;
   padding-block: 20px;
+  transition: max-height 1s ease;
+  display: flex;
 }
