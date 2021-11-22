@@ -2,20 +2,10 @@
 @import '/src/styles/__text/styles__text.scss';
 
 .app-footer {
-  &__section {
-    &_lower {
-      @extend %styles__text_h1;
-      height: 150px;
-      background-color: $hue_main-dark;
-      color: $hue_title-light;
-    }
-  }
-
-  &__forest {
-    display: block;
-    width: 100%;
-    pointer-events: none;
-  }
+  @extend %styles__text_h1;
+  height: 150px;
+  background-color: $hue_main-dark;
+  color: $hue_title-light;
 
   &__social-icons {
     display: flex;
