@@ -1,11 +1,9 @@
 
-<header class="app-header">
-  <div class="app-header__logo">
-    <app-logotype></app-logotype>
-  </div>
-  <div class="app-header__navbar">
-    <ng-container *ngFor="let link of links">
-      <app-link [link]="link"></app-link>
-    </ng-container>
-  </div>
-</header>
+<div class="app-header__logo">
+  <app-logotype></app-logotype>
+</div>
+<div class="app-header__navbar">
+  <ng-container *ngFor="let link of links">
+    <app-link [link]="link"></app-link>
+  </ng-container>
+</div>
