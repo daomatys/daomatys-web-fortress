@@ -1,8 +1,11 @@
 @import '/src/variables/variables.scss';
 @import '/src/styles/__text/styles__text.scss';
+@import '/src/styles/__structures/styles__structures.scss';
 
 .footer {
   @extend %styles__text_h1;
+  @extend %structures__padding;
+  @extend %structures__flex-center-between;
   height: 150px;
   background-color: $hue_main-dark;
   color: $hue_title-light;

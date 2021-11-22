@@ -1,0 +1,8 @@
+@import '/src/variables/variables.scss';
+@import '/src/styles/__structures/styles__structures.scss';
+
+main {
+  @extend %structures__padding;
+  background-color: $hue_main-light;
+  padding-block: 20px;
+}
