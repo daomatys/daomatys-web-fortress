@@ -19,10 +19,10 @@ import { LogotypeComponent } from './components/logotype/logotype.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 
 const appRoutes: Routes = [
-  { path: '',          component: Main__defaultComponent   },
-  { path: 'careers',   component: Main__careersComponent   },
-  { path: 'resume',    component: Main__resumeComponent    },
-  { path: 'portfolio', component: Main__portfolioComponent }
+  { path: '',          component: Main__defaultComponent,   data: { animation: 'DefaultPage'   } },
+  { path: 'careers',   component: Main__careersComponent,   data: { animation: 'CareersPage'   } },
+  { path: 'resume',    component: Main__resumeComponent,    data: { animation: 'ResumePage'    } },
+  { path: 'portfolio', component: Main__portfolioComponent, data: { animation: 'PortfolioPage' } }
 ];
 
 @NgModule({

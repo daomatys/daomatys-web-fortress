@@ -1,2 +1,2 @@
-main.main
-  router-outlet
+main.main( [@routeAnimations]="prepareRoute(outlet)" )
+  router-outlet( #outlet="outlet" )
