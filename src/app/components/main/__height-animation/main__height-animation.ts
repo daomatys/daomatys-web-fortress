@@ -4,22 +4,21 @@ export const mainHeightAnimation:any =
   trigger('routeAnimations', [
     transition('* <=> *', [
 
-      style({
-        position: "relative",
-        left: 0
-      }),
-
       query(':enter', [
-        style({ opacity: '0%' })
+        style({
+          opacity: '0%',
+          position: 'absolute',
+          left: '9%'
+        })
       ]),
 
       group([
         query(':leave', [
-          animate('300ms ease-out', style({ opacity: '0%' }))
+          animate('.4s ease', style({ opacity: '0%' }))
         ]),
 
         query(':enter', [
-          animate('300ms ease-out', style({ opacity: '100%' }))
+          animate('.4s ease', style({ opacity: '100%' }))
         ])
       ]),
     ])
