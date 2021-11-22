@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
 import { Main__careersComponent } from './components/main/__careers/main__careers.component';
 import { Main__defaultComponent } from './components/main/__default/main__default.component';
 import { Main__portfolioComponent } from './components/main/__portfolio/main__portfolio.component';
@@ -27,14 +28,15 @@ const appRoutes: Routes = [
   declarations: [			
     AppComponent,
     HeaderComponent,
-    Main__careersComponent,
-    Main__defaultComponent,
-    Main__portfolioComponent,
-    Main__resumeComponent,
+      LinkComponent,
+      LogotypeComponent,
+    MainComponent,
+      Main__careersComponent,
+      Main__defaultComponent,
+      Main__portfolioComponent,
+      Main__resumeComponent,
     FooterComponent,
-    LinkComponent,
-    LogotypeComponent,
-    SocialIconComponent
+      SocialIconComponent
    ],
   imports: [
     BrowserModule,
