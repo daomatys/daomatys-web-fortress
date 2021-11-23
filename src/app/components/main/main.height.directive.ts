@@ -1,5 +1,5 @@
-import { Directive } from '@angular/core';
-import { HostBinding, HostListener } from '@angular/core';
+import { Directive, HostBinding } from '@angular/core';
+import { NavigationStart, Router } from '@angular/router';
 
 @Directive({
   selector: '[appMainHeight]'
@@ -7,10 +7,14 @@ import { HostBinding, HostListener } from '@angular/core';
 
 export class MainHeightDirective {
   @HostBinding('style.height') mainHeight: string;
-  @HostListener('routerEvent', ['$event']) changeHeight(event:Event) {
-    this.mainHeight = '2000px';
-  }
 
-  constructor() { }
+  constructor( private router: Router ) {
+    this.router.events.subscribe( event => {
+      if (event instanceof NavigationStart) {
+        this.mainHeight = '2000px';
+        console.log('yay');
+      }
+    });
+  }
 
 }

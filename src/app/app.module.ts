@@ -23,7 +23,8 @@ const appRoutes: Routes = [
   { path: '',          component: MainDefaultComponent,   data: { animation: 'DefaultPage'   } },
   { path: 'careers',   component: MainCareersComponent,   data: { animation: 'CareersPage'   } },
   { path: 'resume',    component: MainResumeComponent,    data: { animation: 'ResumePage'    } },
-  { path: 'portfolio', component: MainPortfolioComponent, data: { animation: 'PortfolioPage' } }
+  { path: 'portfolio', component: MainPortfolioComponent, data: { animation: 'PortfolioPage' } },
+  { path: '**', redirectTo: '/'}
 ];
 
 @NgModule({

@@ -13,8 +13,6 @@ import { mainAnimation } from './main.animation';
 
 export class MainComponent implements OnInit {
 
-  constructor() {}
-
   ngOnInit() {}
   
   prepareRoute(outlet: RouterOutlet) {
