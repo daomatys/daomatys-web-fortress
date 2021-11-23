@@ -1,8 +1,16 @@
 import { trigger, state, query, group, style, transition, animate, animateChild } from '@angular/animations';
 
-export const mainHeightAnimation:any =
-  trigger('routeAnimations', [
+const easing:string = '.4s ease';
+
+export const mainHeightAnimation:any = 
+  trigger('routeAnimations', [ /*
     transition('* <=> *', [
+
+      query(':leave', [
+        style({
+          position: 'relative',
+        })
+      ]),
 
       query(':enter', [
         style({
@@ -14,12 +22,13 @@ export const mainHeightAnimation:any =
 
       group([
         query(':leave', [
-          animate('.4s ease', style({ opacity: '0%' }))
+          animate( easing, style({ opacity: '0%' }) )
         ]),
 
         query(':enter', [
-          animate('.4s ease', style({ opacity: '100%' }))
+          animate( easing, style({ opacity: '100%' }) )
         ])
       ]),
-    ])
+    ])*/
   ]);
+  
