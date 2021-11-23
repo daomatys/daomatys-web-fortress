@@ -2,7 +2,7 @@ import { trigger, state, query, group, style, transition, animate, animateChild 
 
 const easing:string = '.4s ease';
 
-export const mainHeightAnimation:any = 
+export const mainAnimation:any = 
   trigger('routeAnimations', [ /*
     transition('* <=> *', [
 
