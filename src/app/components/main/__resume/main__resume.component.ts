@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ResumeSectionsInterface, resumeSectionsArray } from './main__resume.data';
+import { ResumeSectionsInterface, resumeSectionsArray } from './main__resume.sections';
 
 @Component({
   selector: 'app-main__resume',
