@@ -1,21 +1,26 @@
 //base palette: https://colorscheme.ru/#3b320sTe1w0w0
 $deep-teal: #074839;
-$corn-harvest: #8f773d;
+$corn-harvest: #8F773D;
 $pohutukawa: #640A25;
-$black: #000705;
+$black-green: #000705;
 
 $dark-green: #022F25;
-$barley-corn: #B79A5C;
+$parchment: #D1C7B0;
 $rustic-red: #410316;
+$royal-heath:#B15974;
 
 //project colors map
 $hue_main-light: $deep-teal;
-$hue_main-dark: $black;
+$hue_main-dark: $black-green;
+
 $hue_title-light: $corn-harvest;
-$hue_title-dark: $black;
+$hue_title-light-alt: $dark-green;
+$hue_title-dark: $black-green;
+
 $hue_link-active: $rustic-red;
-$hue_link-dark: $black;
-$hue_text-light: $barley-corn;
+$hue_link-dark: $black-green;
+
+$hue_text-light: $parchment;
 
 //gradients
 @function defineGradient( $primary, $secondary ) {

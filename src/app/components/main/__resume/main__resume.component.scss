@@ -1,0 +1,29 @@
+@import '/src/styles/__text/styles__text.scss';
+@import '/src/variables/variables.scss';
+
+.resume {
+  &__info {
+    &_general {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_additional {
+
+    }
+  }
+
+  &__title {
+    @extend %styles__text_h2;
+    color: $hue_title-light-alt;
+  }
+
+  &__text {
+    font-family: Razer-Blackwidow-Regular;
+    color: $hue_text-light;
+  }
+
+  &_photo {
+
+  }
+}
