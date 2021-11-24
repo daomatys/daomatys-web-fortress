@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import resumeInfoBlocksCollection from './main__resume.data.json';
+import { ResumeSectionsInterface, resumeSectionsArray } from './main__resume.data';
 
 @Component({
   selector: 'app-main__resume',
@@ -8,10 +8,7 @@ import resumeInfoBlocksCollection from './main__resume.data.json';
 })
 
 export class MainResumeComponent implements OnInit {
-  public infoBlocks: {
-    title: string,
-    texts: string[]
-  }[] = resumeInfoBlocksCollection;
+  public resumeSections: ResumeSectionsInterface[] = resumeSectionsArray;
 
   constructor() { }
 
