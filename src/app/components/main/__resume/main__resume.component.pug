@@ -1,14 +1,13 @@
 .resume
-  .resume__info
-    .resume__info-block
-      span.resume__title education
-      span.resume__text 2013—2014 / Tomsk State University of Control Systems and Radioelectronics, incomplete
-      span.resume__text 2011—2013 / 198 Seversk School / Secondary school 
-      span.resume__text 2002—2011 / 198 Seversk School / Basic general education
+  ng-container( *ngFor="let section of resumeSections" )
+    span.resume__block-title {{section.title}}
     ng-container( *ngFor="let block of section.blocks" )
-      .resume__info-block
-        span.resume__title {{block.title}}
+      .resume__block-info
+        span.resume__subtitle {{block.subtitle}}
         ng-container( *ngFor="let subtext of block.subtexts" )
-          span.resume__text {{subtext}}
-  .resume__photo
-  .resume__info
+          span.resume__subtext {{subtext}}
+  .resume__block-info
+    span.resume__subtitle education
+    span.resume__subtext 2013—2014 / Tomsk State University of Control Systems and Radioelectronics, incomplete
+    span.resume__subtext 2011—2013 / 198 Seversk School / Secondary school 
+    span.resume__subtext 2002—2011 / 198 Seversk School / Basic general education

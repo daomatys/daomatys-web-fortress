@@ -2,24 +2,31 @@
 @import '/src/variables/variables.scss';
 
 .resume {
-  &__info {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 
-    &-block {
+  &__block {
+    &-title {
+      @extend %styles__text_h1;
+      color: $hue_title-light;
+      width: 100%;
+      text-align: center;
+    }
+
+    &-info {
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
   }
 
-  &__title {
+  &__subtitle {
     @extend %styles__text_h2;
     color: $hue_title-light-alt;
   }
 
-  &__text {
+  &__subtext {
     @extend %styles__text_body;
     color: $hue_text-light;
     margin-left: 24px;

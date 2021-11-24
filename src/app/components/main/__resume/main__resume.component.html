@@ -1,13 +1,11 @@
 
 <div class="resume">
-  <div class="resume__info">
-    <div class="resume__info-block"><span class="resume__title">education</span><span class="resume__text">2013—2014 / Tomsk State University of Control Systems and Radioelectronics, incomplete</span><span class="resume__text">2011—2013 / 198 Seversk School / Secondary school </span><span class="resume__text">2002—2011 / 198 Seversk School / Basic general education</span></div>
+  <ng-container *ngFor="let section of resumeSections"><span class="resume__block-title">{{section.title}}</span>
     <ng-container *ngFor="let block of section.blocks">
-      <div class="resume__info-block"><span class="resume__title">{{block.title}}</span>
-        <ng-container *ngFor="let subtext of block.subtexts"><span class="resume__text">{{subtext}}</span></ng-container>
+      <div class="resume__block-info"><span class="resume__subtitle">{{block.subtitle}}</span>
+        <ng-container *ngFor="let subtext of block.subtexts"><span class="resume__subtext">{{subtext}}</span></ng-container>
       </div>
     </ng-container>
-  </div>
-  <div class="resume__photo"></div>
-  <div class="resume__info"></div>
+  </ng-container>
+  <div class="resume__block-info"><span class="resume__subtitle">education</span><span class="resume__subtext">2013—2014 / Tomsk State University of Control Systems and Radioelectronics, incomplete</span><span class="resume__subtext">2011—2013 / 198 Seversk School / Secondary school </span><span class="resume__subtext">2002—2011 / 198 Seversk School / Basic general education</span></div>
 </div>
