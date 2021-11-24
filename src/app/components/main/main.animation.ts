@@ -6,19 +6,15 @@ export const mainAnimation:any =
   trigger('routeAnimations', [
     transition('* <=> *', [
 
-      query(':leave', [
-        style({
-          position: 'relative',
-        })
-      ]),
+      state(':enter', style({
+        opacity: '0%',
+        position: 'absolute',
+        left: '9%'
+      })),
 
-      query(':enter', [
-        style({
-          opacity: '0%',
-          position: 'absolute',
-          left: '9%'
-        })
-      ]),
+      query(':leave', style({
+        position: 'relative',
+      })),
 
       group([
         query(':leave', [

@@ -3,20 +3,14 @@
 
 .resume {
   &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
     &-block {
       display: flex;
       flex-direction: column;
       gap: 16px;
-    }
-
-    &_general {
-      display: flex;
-      flex-direction: column;
-      gap: 48px;
-    }
-
-    &_additional {
-
     }
   }
 
