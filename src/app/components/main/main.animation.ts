@@ -3,7 +3,7 @@ import { trigger, state, query, group, style, transition, animate, animateChild 
 const easing:string = '.4s ease';
 
 export const mainAnimation:any = 
-  trigger('routeAnimations', [ /*
+  trigger('routeAnimations', [
     transition('* <=> *', [
 
       query(':leave', [
@@ -29,6 +29,6 @@ export const mainAnimation:any =
           animate( easing, style({ opacity: '100%' }) )
         ])
       ]),
-    ])*/
+    ])
   ]);
   
