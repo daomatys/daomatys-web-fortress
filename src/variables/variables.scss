@@ -1,26 +1,29 @@
 //base palette: https://colorscheme.ru/#3b320sTe1w0w0
 $deep-teal: #074839;
-$corn-harvest: #8F773D;
-$pohutukawa: #640A25;
-$black-green: #000705;
+$deep-teal-shade_light:  #064033;
+$deep-teal-shade_normal: #03241C;
+$deep-teal-shade_dark:   #000705;
 
-$dark-green: #022F25;
-$parchment: #D1C7B0;
+$parchment:    #D1C7B0;
+$corn-harvest: #8F773D;
+
+$pohutukawa: #640A25;
 $rustic-red: #410316;
-$royal-heath:#B15974;
+
 
 //project colors map
 $hue_main-light: $deep-teal;
-$hue_main-dark: $black-green;
+$hue_main-dark: $deep-teal-shade_dark;
 
 $hue_title-light: $corn-harvest;
-$hue_title-light-alt: $dark-green;
-$hue_title-dark: $black-green;
+$hue_title-light-alt: $deep-teal-shade_normal;
+$hue_title-dark: $deep-teal-shade_dark;
 
 $hue_link-active: $rustic-red;
-$hue_link-dark: $black-green;
+$hue_link-dark: $deep-teal-shade_dark;
 
 $hue_text-light: $parchment;
+
 
 //gradients
 @function defineGradient( $primary, $secondary ) {
@@ -28,7 +31,8 @@ $hue_text-light: $parchment;
 }
 $gradient_primary: defineGradient( $hue_main-light, $hue_main-dark );
 
-//miscfunctions
+
+//misc functions
 @function calcRelativeFontSize( $value ) {
   @return #{$value / 16}rem;
 }

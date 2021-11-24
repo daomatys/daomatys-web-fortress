@@ -16,11 +16,13 @@
   &__title {
     @extend %styles__text_h2;
     color: $hue_title-light-alt;
+    margin-bottom: 10px;
   }
 
   &__text {
     font-family: Razer-Blackwidow-Regular;
     color: $hue_text-light;
+    margin-left: 24px;
   }
 
   &_photo {
