@@ -10,13 +10,4 @@ main {
   min-height: 0px;
   max-height: 2000px;
   transition: height 1s ease;
-
-  & app-main {
-    &__resume,
-    &__careets,
-    &__default,
-    &__portfolio {
-      width: 100%;
-    }
-  }
 }

@@ -7,13 +7,6 @@
   gap: 48px;
 
   &__block {
-    &-title {
-      @extend %styles__text_h1;
-      color: $hue_title-light;
-      width: 100%;
-      text-align: center;
-    }
-
     &-info {
       display: flex;
       flex-direction: column;
@@ -21,12 +14,12 @@
     }
   }
 
-  &__subtitle {
+  &__title {
     @extend %styles__text_h2;
     color: $hue_title-light-alt;
   }
 
-  &__subtext {
+  &__text {
     @extend %styles__text_body;
     color: $hue_text-light;
     margin-left: 24px;

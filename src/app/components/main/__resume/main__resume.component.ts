@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ResumeSectionsInterface, resumeSectionsArray } from './main__resume.sections';
+import { ResumeBlocksInterface, resumeBlocksArray } from './main__resume.blocks';
 
 @Component({
   selector: 'app-main__resume',
@@ -8,7 +8,7 @@ import { ResumeSectionsInterface, resumeSectionsArray } from './main__resume.sec
 })
 
 export class MainResumeComponent implements OnInit {
-  public resumeSections: ResumeSectionsInterface[] = resumeSectionsArray;
+  public resumeBlocks: ResumeBlocksInterface[] = resumeBlocksArray;
 
   constructor() { }
 
