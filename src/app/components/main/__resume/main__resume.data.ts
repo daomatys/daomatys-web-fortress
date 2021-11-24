@@ -1,5 +1,4 @@
 export interface ResumeSectionsInterface {
-  type: string;
   title: string;
   blocks: {
     subtitle: string;
@@ -7,9 +6,8 @@ export interface ResumeSectionsInterface {
   }[];
 }
 
-export const resumeSectionsArray:ResumeSectionsInterface[] = [
+export const resumeSectionsArray = [
   {
-    type: "infoblock",
     title: "matyskin maxim",
     blocks: [
       {
@@ -21,7 +19,6 @@ export const resumeSectionsArray:ResumeSectionsInterface[] = [
     ]
   },
   {
-    type: "infoblock",
     title: "languages",
     blocks: [
       {
@@ -48,7 +45,6 @@ export const resumeSectionsArray:ResumeSectionsInterface[] = [
     ]
   },
   {
-    type: "infoblock",
     title: "skills",
     blocks: [
       {
