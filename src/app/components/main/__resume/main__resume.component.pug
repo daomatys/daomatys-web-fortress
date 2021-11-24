@@ -5,28 +5,10 @@
       span.resume__text 2013—2014 / Tomsk State University of Control Systems and Radioelectronics, incomplete
       span.resume__text 2011—2013 / 198 Seversk School / Secondary school 
       span.resume__text 2002—2011 / 198 Seversk School / Basic general education
-    .resume__info-block
-      span.resume__title professional status
-      span.resume__text unemployed junior front-end developer
-    .resume__info-block
-      span.resume__title languages
-      span.resume__text russian — native
-      span.resume__text english — upper-intermediate
-    .resume__info-block
-      span.resume__title programming languages
-      span.resume__text javascript
-      span.resume__text typescript
-    .resume__info-block
-      span.resume__title domain-specific languages
-      span.resume__text angular
-      span.resume__text sqilte3
-    .resume__info-block
-      span.resume__title hard skills
-      span.resume__text html / pug
-      span.resume__text css / scss
-      span.resume__text readymag / figma
-      span.resume__text adobe ps
-      span.resume__text webpack
-      span.resume__text git cli
+    ng-container( *ngFor="let block of infoBlocks" )
+      .resume__info-block
+        span.resume__title {{block.title}}
+        ng-container( *ngFor="let text of block.texts" )
+          span.resume__text {{text}}
   .resume__photo
   .resume__info

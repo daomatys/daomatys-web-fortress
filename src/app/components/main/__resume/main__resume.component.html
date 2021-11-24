@@ -2,11 +2,11 @@
 <div class="resume">
   <div class="resume__info">
     <div class="resume__info-block"><span class="resume__title">education</span><span class="resume__text">2013—2014 / Tomsk State University of Control Systems and Radioelectronics, incomplete</span><span class="resume__text">2011—2013 / 198 Seversk School / Secondary school </span><span class="resume__text">2002—2011 / 198 Seversk School / Basic general education</span></div>
-    <div class="resume__info-block"><span class="resume__title">professional status</span><span class="resume__text">unemployed junior front-end developer</span></div>
-    <div class="resume__info-block"><span class="resume__title">languages</span><span class="resume__text">russian — native</span><span class="resume__text">english — upper-intermediate</span></div>
-    <div class="resume__info-block"><span class="resume__title">programming languages</span><span class="resume__text">javascript</span><span class="resume__text">typescript</span></div>
-    <div class="resume__info-block"><span class="resume__title">domain-specific languages</span><span class="resume__text">angular</span><span class="resume__text">sqilte3</span></div>
-    <div class="resume__info-block"><span class="resume__title">hard skills</span><span class="resume__text">html / pug</span><span class="resume__text">css / scss</span><span class="resume__text">readymag / figma</span><span class="resume__text">adobe ps</span><span class="resume__text">webpack</span><span class="resume__text">git cli</span></div>
+    <ng-container *ngFor="let block of infoBlocks">
+      <div class="resume__info-block"><span class="resume__title">{{block.title}}</span>
+        <ng-container *ngFor="let text of block.texts"><span class="resume__text">{{text}}</span></ng-container>
+      </div>
+    </ng-container>
   </div>
   <div class="resume__photo"></div>
   <div class="resume__info"></div>
