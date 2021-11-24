@@ -14,6 +14,7 @@ import { MainPortfolioComponent } from './components/main/__portfolio/main__port
 import { MainResumeComponent } from './components/main/__resume/main__resume.component';
 import { ImageBlockComponent } from './components/image-block/image-block.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RoadmapSampleComponent } from './components/roadmap-sample/roadmap-sample.component';
 
 import { LinkComponent } from './components/link/link.component';
 import { LogotypeComponent } from './components/logotype/logotype.component';
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
       MainResumeComponent,
     ImageBlockComponent,
     FooterComponent,
-      SocialIconComponent
+      SocialIconComponent,
+    RoadmapSampleComponent
    ],
   imports: [
     BrowserModule,
