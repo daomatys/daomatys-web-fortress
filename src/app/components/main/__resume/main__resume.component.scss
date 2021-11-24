@@ -3,17 +3,16 @@
 
 .resume {
   &__info {
-
     &-block {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 16px;
     }
 
     &_general {
       display: flex;
       flex-direction: column;
-      gap: 32px;
+      gap: 48px;
     }
 
     &_additional {
@@ -27,7 +26,7 @@
   }
 
   &__text {
-    font-family: Razer-Blackwidow-Regular;
+    @extend %styles__text_body;
     color: $hue_text-light;
     margin-left: 24px;
   }
