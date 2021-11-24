@@ -47,7 +47,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot( appRoutes )
   ],
   providers: [],
   bootstrap: [AppComponent]

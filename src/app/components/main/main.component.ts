@@ -15,7 +15,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {}
   
-  prepareRoute(outlet: RouterOutlet) {
+  prepareRoute( outlet: RouterOutlet ) {
     return outlet?.activatedRouteData?.['animation'];
   }
 }
