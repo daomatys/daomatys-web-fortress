@@ -3,7 +3,6 @@ export interface ResumeBlocksInterface {
   texts: string[];
 };
 
-
 export const resumeBlocksArray = [
   {
     title: "who am i",
