@@ -10,10 +10,18 @@
   }
 
   &_h1 {
-    font-size: calcRelativeFontSize( 32 );
+    font-size: 3rem
   }
 
   &_h2 {
-    font-size: calcRelativeFontSize( 24 );
+    font-size: 2rem;
+  }
+
+  &_h3 {
+    font-size: 1.5rem;
+  }
+
+  &_body {
+    font-size: 1rem;
   }
 }

@@ -3,7 +3,7 @@
 @import '/src/styles/__structures/styles__structures.scss';
 
 .footer {
-  @extend %styles__text_h1;
+  @extend %styles__text_h2;
   @extend %structures__padding;
   @extend %structures__flex-center-between;
   height: 150px;
