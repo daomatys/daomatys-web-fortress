@@ -6,11 +6,11 @@ export interface ResumeBlocksInterface {
 
 export const resumeBlocksArray = [
   {
-    title: "whoami",
+    title: "who am i",
     texts: [
-      "Matyskin Maxim / 26yo",
-      "junior front-end developer",
-      "unemployed "
+      "Matyskin Maxim, 26yo",
+      "seversk, tomsk region, russia",
+      "junior front-end developer"
     ]
   },
   {
