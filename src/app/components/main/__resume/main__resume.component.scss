@@ -3,9 +3,17 @@
 
 .resume {
   &__info {
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
     &_general {
       display: flex;
       flex-direction: column;
+      gap: 32px;
     }
 
     &_additional {
@@ -16,7 +24,6 @@
   &__title {
     @extend %styles__text_h2;
     color: $hue_title-light-alt;
-    margin-bottom: 10px;
   }
 
   &__text {
