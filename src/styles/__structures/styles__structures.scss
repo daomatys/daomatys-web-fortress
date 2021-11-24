@@ -3,8 +3,9 @@
   width: 82%;
 }
 
-%structures__flex-center-between {
+%structures__header-n-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-block: 64px;
 }

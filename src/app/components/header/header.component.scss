@@ -5,8 +5,7 @@ $headerInnerGap: 20px;
 
 .header {
   @extend %structures__padding;
-  @extend %structures__flex-center-between;
-  height: 128px;
+  @extend %structures__header-n-footer;
   background-color: $hue_main-light;
 
   &__logo {
