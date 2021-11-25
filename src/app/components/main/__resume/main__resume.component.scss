@@ -8,6 +8,7 @@
 
   &__block {
     &-info {
+      position: relative;
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -27,5 +28,12 @@
 
   &_photo {
 
+  }
+
+  &__roadmap-pillar {
+    position: absolute;
+    width: 11px;
+    height: 100%;
+    background-color: $hue_title-light-alt;
   }
 }
