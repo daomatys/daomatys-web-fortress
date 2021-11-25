@@ -19,10 +19,14 @@
     }
   }
 
-  &__time-stamp,
   &__text,
-  &__title {
+  &__title,
+  &__time-stamp {
     @extend %styles__text_body;
     color: $hue_text-light;
+  }
+  
+  &__text {
+    font-style: italic;
   }
 }
