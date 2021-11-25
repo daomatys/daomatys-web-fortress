@@ -3,8 +3,8 @@ import { RoadmapSampleInterface } from '../__sample-interface/roadmap__interface
 
 @Component({
   selector: 'app-roadmap-sample',
-  templateUrl: './roadmap-sample.component.html',
-  styleUrls: ['./roadmap-sample.component.scss']
+  templateUrl: './roadmap__sample.component.html',
+  styleUrls: ['./roadmap__sample.component.scss']
 })
 
 export class RoadmapSampleComponent implements OnInit {
