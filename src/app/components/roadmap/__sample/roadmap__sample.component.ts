@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { RoadmapInterface } from './../__interface/roadmap__interface';
+import { RoadmapSampleInterface } from '../__sample-interface/roadmap__interface';
 
 @Component({
   selector: 'app-roadmap-sample',
@@ -8,7 +8,7 @@ import { RoadmapInterface } from './../__interface/roadmap__interface';
 })
 
 export class RoadmapSampleComponent implements OnInit {
-  @Input() sample: RoadmapInterface;
+  @Input() sample: RoadmapSampleInterface;
 
   constructor() { }
 

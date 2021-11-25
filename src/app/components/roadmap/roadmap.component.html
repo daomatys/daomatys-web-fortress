@@ -1,3 +1,9 @@
-<p>
-  roadmap works!
-</p>
+
+<div class="roadmap">
+  <div class="roadmap__pillar"></div>
+  <div class="roadmap__samples">
+    <ng-container *ngFor="let sample of roadmapSamples">
+      <app-roadmap-sample [sample]="sample"></app-roadmap-sample>
+    </ng-container>
+  </div>
+</div>
