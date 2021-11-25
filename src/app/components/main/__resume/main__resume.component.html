@@ -6,11 +6,6 @@
     </div>
   </ng-container>
   <div class="resume__block-info"><span class="resume__title">navigation</span>
-    <div class="resume__roadmap">
-      <div class="resume__roadmap-pillar"></div>
-      <ng-container *ngFor="let sample of roadmapSamples">
-        <app-roadmap-sample [sample]="sample"></app-roadmap-sample>
-      </ng-container>
-    </div>
+    <app-roadmap [roadmapSamples]="roadmapSamples"></app-roadmap>
   </div>
 </div>

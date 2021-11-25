@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { RoadmapSampleComponent } from './roadmap-sample.component';
+import { Roadmap__sampleComponent } from './roadmap__sample.component';
 
-describe('RoadmapSampleComponent', () => {
-  let component: RoadmapSampleComponent;
-  let fixture: ComponentFixture<RoadmapSampleComponent>;
+describe('Roadmap__sampleComponent', () => {
+  let component: Roadmap__sampleComponent;
+  let fixture: ComponentFixture<Roadmap__sampleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RoadmapSampleComponent ]
+      declarations: [ Roadmap__sampleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RoadmapSampleComponent);
+    fixture = TestBed.createComponent(Roadmap__sampleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
