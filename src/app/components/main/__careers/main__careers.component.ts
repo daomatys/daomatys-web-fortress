@@ -7,6 +7,7 @@ import employersRoadmapSamplesArray from './main__careers.employers-roadmap-samp
   templateUrl: './main__careers.component.html',
   styleUrls: ['./main__careers.component.scss']
 })
+
 export class MainCareersComponent implements OnInit {
   public employersRoadmapSamples:RoadmapSampleInterface[] = employersRoadmapSamplesArray;
 
@@ -14,5 +15,4 @@ export class MainCareersComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
