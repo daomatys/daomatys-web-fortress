@@ -5,4 +5,9 @@
       <ng-container *ngFor="let text of block.texts"><span class="resume__text">{{text}}</span></ng-container>
     </div>
   </ng-container>
+  <div class="resume__block-info"><span class="resume__title">navigation</span>
+    <ng-container *ngFor="let sample of roadmapSamples">
+      <app-roadmap-sample [sample]="sample"></app-roadmap-sample>
+    </ng-container>
+  </div>
 </div>

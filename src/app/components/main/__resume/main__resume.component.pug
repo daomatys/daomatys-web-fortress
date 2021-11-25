@@ -4,3 +4,7 @@
       span.resume__title {{block.title}}
       ng-container( *ngFor="let text of block.texts" )
         span.resume__text {{text}}
+  .resume__block-info
+    span.resume__title navigation
+    ng-container( *ngFor="let sample of roadmapSamples" )
+      app-roadmap-sample( [sample]="sample" )

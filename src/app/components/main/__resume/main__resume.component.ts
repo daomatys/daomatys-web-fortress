@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumeBlocksInterface, resumeBlocksArray } from './main__resume.blocks';
+import { RoadmapSampleInterface } from '../../roadmap-sample/__interface/roadmap-sample__interface';
+
+import roadmapSamplesArray from './main__resume.education-roadmap-samples';
 
 @Component({
   selector: 'app-main__resume',
@@ -8,6 +11,7 @@ import { ResumeBlocksInterface, resumeBlocksArray } from './main__resume.blocks'
 })
 
 export class MainResumeComponent implements OnInit {
+  public roadmapSamples: RoadmapSampleInterface[] = roadmapSamplesArray;
   public resumeBlocks: ResumeBlocksInterface[] = resumeBlocksArray;
 
   constructor() { }
