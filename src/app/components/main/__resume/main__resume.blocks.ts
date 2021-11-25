@@ -7,9 +7,9 @@ export const resumeBlocksArray = [
   {
     title: "who am i",
     texts: [
-      "Matyskin Maxim, 26yo",
-      "seversk, tomsk region, russia",
-      "junior front-end developer"
+      "Matyskin Maxim / 26yo",
+      "junior front-end developer",
+      "from seversk / tomsk region / russia"
     ]
   },
   {
