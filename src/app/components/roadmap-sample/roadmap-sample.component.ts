@@ -6,6 +6,7 @@ import { RoadmapSampleInterface } from './__interface/roadmap-sample__interface'
   templateUrl: './roadmap-sample.component.html',
   styleUrls: ['./roadmap-sample.component.scss']
 })
+
 export class RoadmapSampleComponent implements OnInit {
   @Input() sample: RoadmapSampleInterface;
 
