@@ -1,10 +1,21 @@
 @import '/src/variables/variables.scss';
 
+$roadmapGap: 32px;
+
 .roadmap {
-  &-pillar {
+  position: relative;
+
+  &__pillar {
     position: absolute;
-    width: 11px;
-    height: 100%;
+    border-radius: 5px;
+    width: 12px;
+    height: calc(100% - $roadmapGap);
     background-color: $hue_title-light-alt;
+  }
+
+  &__samples {
+    display: flex;
+    flex-direction: column;
+    gap: $roadmapGap;
   }
 }
