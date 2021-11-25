@@ -1,0 +1,34 @@
+@import '/src/variables/variables.scss';
+@import '/src/styles/__text/styles__text.scss';
+
+.roadmap-sample {
+  display: flex;
+  
+  &__container {
+    &-left {
+      position: relative;
+      display: flex;
+      margin-inline: 24px;
+      width: 100px;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__time-stamp,
+  &__text,
+  &__title {
+    @extend %styles__text_body;
+    color: $hue_text-light;
+  }
+
+  &__red-pillar {
+    position: absolute;
+    width: 11px;
+    height: 100%;
+    background-color: $hue_title-light-alt;
+  }
+}

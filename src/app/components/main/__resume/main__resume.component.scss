@@ -21,8 +21,8 @@
 
   &__text {
     @extend %styles__text_body;
-    color: $hue_text-light;
     margin-left: 24px;
+    color: $hue_text-light;
   }
 
   &_photo {
