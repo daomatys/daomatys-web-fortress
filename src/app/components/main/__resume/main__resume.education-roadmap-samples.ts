@@ -6,12 +6,12 @@ export default [
   },
   {
     timestamp: "2011—2013",
-    title: "198 Seversk School",
-    text: "Secondary school"
+    title: "198 Seversk Middle School",
+    text: "Senior middle school education"
   },
   {
     timestamp: "2002—2011",
-    title: "198 Seversk School",
-    text: "Basic general education"
+    title: "198 Seversk Middle School",
+    text: "Junior middle school education"
   }
 ]
