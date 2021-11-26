@@ -27,7 +27,7 @@ export const resumeBlocksArray = [
     ]
   },
   {
-    title: "domain-specific languages",
+    title: "hard skills",
     texts: [
       "angular",
       "pug",
