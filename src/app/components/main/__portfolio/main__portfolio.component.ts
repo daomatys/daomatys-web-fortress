@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PresentationUnitInterface } from '../../presentation-unit/__interface/presentation-unit__interface';
+
+import presentationUnits from './main__portfolio.presentation-units.collection';
 
 @Component({
   selector: 'app-main__portfolio',
@@ -6,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main__portfolio.component.scss']
 })
 export class MainPortfolioComponent implements OnInit {
+  public units: PresentationUnitInterface[] = presentationUnits;
 
   constructor() { }
 

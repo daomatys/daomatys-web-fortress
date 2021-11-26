@@ -6,7 +6,7 @@ import {
   faAngular
 } from '@fortawesome/free-brands-svg-icons';
 
-import { IconDefinition } from '@fortawesome/fontawesome-common-types';
+import { IconDefinition, IconName } from '@fortawesome/fontawesome-common-types';
 
 const faPug: IconDefinition = {
   prefix: "fac",

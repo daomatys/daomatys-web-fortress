@@ -1,2 +1,9 @@
 
-<div class="portfolio">portfolio</div>
+<div class="portfolio">
+  <ng-container *ngFor="let unit of units">
+    <app-presentation-unit [unit]="unit"></app-presentation-unit>
+    <ng-container *ngFor="let icon of unit.icons">
+      <app-social-icon [socialIcon]="icon"></app-social-icon>
+    </ng-container>
+  </ng-container>
+</div>
