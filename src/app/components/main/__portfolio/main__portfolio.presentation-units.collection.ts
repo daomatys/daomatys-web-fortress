@@ -11,7 +11,7 @@ export default [
     src:  "",
     text: "",
     icons: [
-      ""
+      faSass
     ],
     href: "https://github.com/daomatys/metalamp-fedsec-layouts"
   },
@@ -19,7 +19,9 @@ export default [
     src:  "",
     text: "",
     icons: [
-      ""
+      faHtml5,
+      faCss3,
+      faJsSquare
     ],
     href: "https://github.com/daomatys/blackjack-wut"
   },
@@ -27,7 +29,9 @@ export default [
     src:  "",
     text: "",
     icons: [
-      ""
+      faHtml5,
+      faCss3,
+      faJsSquare
     ],
     href: "https://github.com/daomatys/jsbasic-20210520_overmaxcoast"
   },
@@ -35,7 +39,7 @@ export default [
     src:  "",
     text: "",
     icons: [
-      ""
+
     ],
     href: "https://github.com/daomatys/voenkom-tg-bot"
   }
