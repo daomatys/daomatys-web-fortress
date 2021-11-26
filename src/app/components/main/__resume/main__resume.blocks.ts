@@ -30,17 +30,20 @@ export const resumeBlocksArray = [
     title: "domain-specific languages",
     texts: [
       "angular",
+      "pug",
+      "scss",
+      "webpack",
       "sqilte3"
     ]
   },
   {
-    title: "hard skills",
+    title: "tools",
     texts: [
-      "html / pug",
-      "css / scss",
-      "readymag / figma",
-      "adobe ps",
-      "webpack",
+      "vscode",
+      "readymag",
+      "figma",
+      "adobe photoshop",
+      "inkscape",
       "git cli"
     ]
   }
