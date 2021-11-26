@@ -1,8 +1,8 @@
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import { SocialIconInterface } from "../../social-icon/__interface/social-icon__interface";
 
 export interface PresentationUnitInterface {
   src: string;
   text: string;
   href: string;
-  icons: IconDefinition[];
+  icons: SocialIconInterface[];
 }

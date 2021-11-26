@@ -37,9 +37,18 @@ export default [
     src:  "",
     text: "",
     icons: [
-      faPug,
-      faSass,
-      faJsSquare
+      {
+        definition: faPug,
+        href: ''
+      },
+      {
+        definition: faSass,
+        href: ''
+      },
+      {
+        definition: faJsSquare,
+        href: ''
+      },
     ],
     href: "https://github.com/daomatys/metalamp-fedsec-layouts"
   },
@@ -47,9 +56,18 @@ export default [
     src:  "",
     text: "",
     icons: [
-      faHtml5,
-      faCss3,
-      faJsSquare
+      {
+        definition: faHtml5,
+        href: ''
+      },
+      {
+        definition: faCss3,
+        href: ''
+      },
+      {
+        definition: faJsSquare,
+        href: ''
+      }
     ],
     href: "https://github.com/daomatys/blackjack-wut"
   },
@@ -57,9 +75,18 @@ export default [
     src:  "",
     text: "",
     icons: [
-      faHtml5,
-      faCss3,
-      faJsSquare
+      {
+        definition: faHtml5,
+        href: ''
+      },
+      {
+        definition: faCss3,
+        href: ''
+      },
+      {
+        definition: faJsSquare,
+        href: ''
+      }
     ],
     href: "https://github.com/daomatys/jsbasic-20210520_overmaxcoast"
   },
@@ -67,7 +94,10 @@ export default [
     src:  "",
     text: "",
     icons: [
-      faSqlite
+      {
+        definition: faSqlite,
+        href: ''
+      }
     ],
     href: "https://github.com/daomatys/voenkom-tg-bot"
   }
