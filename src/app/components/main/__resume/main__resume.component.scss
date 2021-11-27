@@ -9,6 +9,7 @@
     "c photo"
     "d e"
     "edu edu";
+  grid-template-columns: auto 275px;
   grid-gap: 48px;
 
   &__block {
@@ -33,7 +34,7 @@
 
   &__photo {
     grid-area: photo;
-    width: 70%;
+    width: 100%;
     max-height: 100%;
   }
 

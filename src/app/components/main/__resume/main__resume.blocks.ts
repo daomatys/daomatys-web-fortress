@@ -7,9 +7,9 @@ export const resumeBlocksArray = [
   {
     title: "who am i",
     texts: [
-      "Matyskin Maxim / 26 yo",
+      "Matyskin Maxim, 26 yo",
       "junior front-end developer",
-      "from seversk / tomsk region / russia"
+      "from seversk, tomsk region, russia"
     ]
   },
   {
@@ -29,22 +29,21 @@ export const resumeBlocksArray = [
   {
     title: "hard skills",
     texts: [
-      "angular",
-      "pug",
-      "scss",
       "webpack",
-      "sqilte3"
+      "angular",
+      "sqilte3",
+      "scss",
+      "pug",
     ]
   },
   {
     title: "tools",
     texts: [
-      "vscode",
-      "readymag",
-      "figma",
       "adobe photoshop",
       "inkscape",
-      "git cli"
+      "vscode",
+      "git cli",
+      "figma"
     ]
   }
 ]
