@@ -34,7 +34,7 @@ const faSqlite: IconDefinition = {
 
 export default [
   {
-    href: 'https://github.com/daomatys/metalamp-fedsec-layouts',
+    href: 'https://daomatys.github.io/metalamp-fedsec-layouts',
     src:  'metalamp-fedsec-layouts.png',
     text: 'metalamp project',
     icons: [
@@ -53,7 +53,7 @@ export default [
     ]
   },
   {
-    href: 'https://github.com/daomatys/blackjack-wut',
+    href: 'https://daomatys.github.io/blackjack-wut/',
     src:  'blackjack-wut.png',
     text: 'blackjack-wut project',
     icons: [

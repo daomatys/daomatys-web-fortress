@@ -1,11 +1,10 @@
 
 <div class="presentation-unit">
-  <div class="presentation-unit__layer_back"><img class="presentation-unit__image" src="{{unitImageSrc}}"/>
+  <div class="presentation-unit__layer_back"><img class="presentation-unit__image" src="{{unitImageSrc}}"/></div><a class="presentation-unit__layer_front" href="{{unit?.href}}" target="_blank" rel="noopener noreferrer">
     <div class="presentation-unit__text">{{unit?.text}}</div>
-  </div>
-  <div class="presentation-unit__layer_front">
-    <ng-container *ngFor="let icon of unit?.icons">
-      <app-social-icon [socialIcon]="icon"></app-social-icon>
-    </ng-container>
-  </div>
+    <div class="presentation-unit__icons">
+      <ng-container *ngFor="let icon of unit?.icons">
+        <app-social-icon [socialIcon]="icon"></app-social-icon>
+      </ng-container>
+    </div></a>
 </div>

@@ -1,7 +1,8 @@
 .presentation-unit
   .presentation-unit__layer_back
     img.presentation-unit__image( src="{{unitImageSrc}}" )
+  a.presentation-unit__layer_front( href="{{unit?.href}}" target="_blank" rel="noopener noreferrer" )
     .presentation-unit__text {{unit?.text}}
-  .presentation-unit__layer_front
-    ng-container( *ngFor="let icon of unit?.icons" )
-      app-social-icon( [socialIcon]="icon" )
+    .presentation-unit__icons
+      ng-container( *ngFor="let icon of unit?.icons" )
+        app-social-icon( [socialIcon]="icon" )
