@@ -10,8 +10,7 @@ import { PresentationUnitInterface } from './__interface/presentation-unit__inte
 export class PresentationUnitComponent implements OnInit {
   @Input() unit: PresentationUnitInterface;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 }

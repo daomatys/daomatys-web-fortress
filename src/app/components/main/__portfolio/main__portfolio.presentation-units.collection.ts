@@ -101,4 +101,4 @@ export default [
     ],
     href: 'https://github.com/daomatys/voenkom-tg-bot'
   }
-]
+];
