@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PresentationUnitInterface } from '../../presentation-unit/presentation-unit.interface';
 
-import presentationUnitsArray from './main__portfolio.presentation-units.collection';
+import presentationUnitsArray from './main__portfolio.presentation-units-collection';
 
 @Component({
   selector: 'app-main__portfolio',
