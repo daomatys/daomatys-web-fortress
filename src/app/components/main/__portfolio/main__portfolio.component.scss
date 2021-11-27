@@ -4,6 +4,6 @@ $unitGap: 3vw;
 .portfolio {
   display: grid;
   grid-template-columns: repeat(3, $unitSide);
-  grid-template-rows: $unitSide;
+  grid-auto-rows: $unitSide;
   grid-gap: $unitGap;
 }

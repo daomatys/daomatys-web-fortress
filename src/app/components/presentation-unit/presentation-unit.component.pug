@@ -1,6 +1,7 @@
 .presentation-unit
   .presentation-unit__layer_back
     img.presentation-unit__image( src="{{unitImageSrc}}" )
+    .presentation-unit__shadow-mask
   a.presentation-unit__layer_front( href="{{unit?.href}}" target="_blank" rel="noopener noreferrer" )
     span.presentation-unit__title {{unit?.title}}
     span.presentation-unit__text {{unit?.text}}
