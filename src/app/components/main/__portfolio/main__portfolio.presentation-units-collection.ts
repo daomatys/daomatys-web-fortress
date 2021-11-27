@@ -81,14 +81,6 @@ export default [
     src:  'bangkok-express.png',
     icons: [
       {
-        definition: faHtml5,
-        href: ''
-      },
-      {
-        definition: faCss3,
-        href: ''
-      },
-      {
         definition: faJsSquare,
         href: ''
       }
@@ -102,6 +94,10 @@ export default [
     icons: [
       {
         definition: faSqlite,
+        href: ''
+      },
+      {
+        definition: faJsSquare,
         href: ''
       }
     ]
