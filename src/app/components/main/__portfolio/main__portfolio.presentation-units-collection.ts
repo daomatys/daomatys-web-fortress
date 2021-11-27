@@ -32,11 +32,13 @@ const faSqlite: IconDefinition = {
   ]
 } as any;
 
+
 export default [
   {
+    title: 'metalamp layouts',
+    text: 'ui-kit and landings',
     href: 'https://daomatys.github.io/metalamp-fedsec-layouts',
     src:  'metalamp-fedsec-layouts.png',
-    text: 'metalamp project',
     icons: [
       {
         definition: faPug,
@@ -53,9 +55,10 @@ export default [
     ]
   },
   {
+    title: 'blackjack wut',
+    text: 'singleplayer web-casino',
     href: 'https://daomatys.github.io/blackjack-wut/',
     src:  'blackjack-wut.png',
-    text: 'blackjack-wut project',
     icons: [
       {
         definition: faHtml5,
@@ -72,9 +75,10 @@ export default [
     ]
   },
   {
+    title: 'bangkok express',
+    text: 'study project',
     href: 'https://github.com/daomatys/jsbasic-20210520_overmaxcoast',
     src:  'bangkok-express.png',
-    text: 'bangkok-express project',
     icons: [
       {
         definition: faHtml5,
@@ -91,9 +95,10 @@ export default [
     ]
   },
   {
+    title: 'voenkom bot',
+    text: 'bot-entertainer for telegram chats',
     href: 'https://github.com/daomatys/voenkom-tg-bot',
     src:  '',
-    text: '',
     icons: [
       {
         definition: faSqlite,

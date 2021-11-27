@@ -1,7 +1,6 @@
 
 <div class="presentation-unit">
-  <div class="presentation-unit__layer_back"><img class="presentation-unit__image" src="{{unitImageSrc}}"/></div><a class="presentation-unit__layer_front" href="{{unit?.href}}" target="_blank" rel="noopener noreferrer">
-    <div class="presentation-unit__text">{{unit?.text}}</div>
+  <div class="presentation-unit__layer_back"><img class="presentation-unit__image" src="{{unitImageSrc}}"/></div><a class="presentation-unit__layer_front" href="{{unit?.href}}" target="_blank" rel="noopener noreferrer"><span class="presentation-unit__title">{{unit?.title}}</span><span class="presentation-unit__text">{{unit?.text}}</span>
     <div class="presentation-unit__icons">
       <ng-container *ngFor="let icon of unit?.icons">
         <app-social-icon [socialIcon]="icon"></app-social-icon>
