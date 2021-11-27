@@ -10,7 +10,11 @@ import { PresentationUnitInterface } from './presentation-unit.interface';
 export class PresentationUnitComponent implements OnInit {
   @Input() unit: PresentationUnitInterface;
 
+  public unitImageSrc:string;
+
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.unitImageSrc = '../../assets/' + this.unit.src;
+  }
 }

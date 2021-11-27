@@ -1,6 +1,6 @@
 .presentation-unit
   .presentation-unit__layer_back
-    img.presentation-unit__image( src="{{unit?.src}}" )
+    img.presentation-unit__image( src="{{unitImageSrc}}" )
     .presentation-unit__text {{unit?.text}}
   .presentation-unit__layer_front
     ng-container( *ngFor="let icon of unit?.icons" )

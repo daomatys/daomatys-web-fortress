@@ -1,6 +1,28 @@
 @import '/src/variables/variables.scss';
 
 .presentation-unit {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   font-size: 2rem;
   color: $hue_title-light;
+
+  &__layer {
+    &_front {
+      position: absolute;
+      top: 0;
+
+    }
+
+    &_back {
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+  }
 }
