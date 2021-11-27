@@ -1,7 +1,8 @@
 @import '/src/variables/variables.scss';
 
 .portfolio {
-  display: flex;
+  display: grid;
+  grid-gap: 20px;
   font-size: 2rem;
   color: $hue_title-light;
 }

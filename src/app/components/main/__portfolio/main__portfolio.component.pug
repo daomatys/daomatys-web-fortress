@@ -1,5 +1,3 @@
 .portfolio
   ng-container( *ngFor="let unit of units" )
     app-presentation-unit( [unit]="unit" )
-    ng-container( *ngFor="let icon of unit.icons" )
-      app-social-icon( [socialIcon]="icon" )

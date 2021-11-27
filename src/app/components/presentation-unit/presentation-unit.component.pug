@@ -1,3 +1,7 @@
 .presentation-unit
-  img.presentation-unit__image( src="{{unit.src}}" )
-  .presentation-unit__text {{unit.text}}
+  .presentation-unit__side_front
+    img.presentation-unit__image( src="{{unit.src}}" )
+    .presentation-unit__text {{unit.text}}
+  .presentation-unit__side_hover
+    ng-container( *ngFor="let icon of unit.icons" )
+    app-social-icon( [socialIcon]="icon" )
