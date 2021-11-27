@@ -1,9 +1,10 @@
 .resume
+  img.resume__photo( src="../../assets/resume-photo.jpg" )
   ng-container( *ngFor="let block of resumeBlocks" )
     .resume__block-info
       span.resume__title {{block.title}}
       ng-container( *ngFor="let text of block.texts" )
         span.resume__text {{text}}
-  .resume__block-info
+  .resume__block-info.resume__edu
     span.resume__title education
     app-roadmap( [roadmapSamples]="roadmapSamples" )
