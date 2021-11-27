@@ -4,10 +4,11 @@
 main {
   @extend %structures__padding;
   display: flex;
-  background-color: $hue_main-light;
+  justify-content: center;
   padding-block: 5px;
   height: auto;
   min-height: 0px;
   max-height: 2000px;
+  background-color: $hue_main-light;
   transition: height 1s ease;
 }
