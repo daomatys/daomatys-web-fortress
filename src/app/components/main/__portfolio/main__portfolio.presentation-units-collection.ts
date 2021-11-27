@@ -3,10 +3,12 @@ import {
   faHtml5,
   faCss3,
   faSass,
-  faAngular
+  faAngular,
+  faNodeJs
 } from '@fortawesome/free-brands-svg-icons';
 
 import { IconDefinition } from '@fortawesome/fontawesome-common-types';
+import { SocialIconInterface } from '../../social-icon/social-icon.interface';
 
 const faPug: IconDefinition = {
   prefix: 'fac',
@@ -32,6 +34,34 @@ const faSqlite: IconDefinition = {
   ]
 } as any;
 
+const iconHTML5:SocialIconInterface = {
+  definition: faHtml5,
+  href: 'https://developer.mozilla.org/ru/docs/Web/HTML'
+};
+const iconPug:SocialIconInterface = {
+  definition: faPug,
+  href: 'https://pugjs.org/'
+};
+const iconCSS3:SocialIconInterface = {
+  definition: faCss3,
+  href: 'https://www.w3.org/Style/CSS/'
+};
+const iconSass:SocialIconInterface ={
+  definition: faSass,
+  href: 'https://sass-lang.com/'
+};
+const iconJS:SocialIconInterface = {
+  definition: faJsSquare,
+  href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+};
+const iconNode:SocialIconInterface = {
+  definition: faNodeJs,
+  href: 'https://nodejs.org/en/'
+};
+const iconSqlite:SocialIconInterface = {
+  definition: faSqlite,
+  href: 'https://www.sqlite.org/index.html'
+};
 
 export default [
   {
@@ -39,67 +69,27 @@ export default [
     text: 'ui-kit and landings',
     href: 'https://daomatys.github.io/metalamp-fedsec-layouts',
     src:  'metalamp-fedsec-layouts.png',
-    icons: [
-      {
-        definition: faPug,
-        href: ''
-      },
-      {
-        definition: faSass,
-        href: ''
-      },
-      {
-        definition: faJsSquare,
-        href: ''
-      },
-    ]
+    icons: [ iconPug, iconSass, iconJS ]
   },
   {
     title: 'blackjack wut',
     text: 'singleplayer web-casino',
     href: 'https://daomatys.github.io/blackjack-wut/',
     src:  'blackjack-wut.png',
-    icons: [
-      {
-        definition: faHtml5,
-        href: ''
-      },
-      {
-        definition: faCss3,
-        href: ''
-      },
-      {
-        definition: faJsSquare,
-        href: ''
-      }
-    ]
+    icons: [ iconHTML5, iconCSS3, iconJS ]
   },
   {
     title: 'bangkok express',
     text: 'study project',
     href: 'https://github.com/daomatys/jsbasic-20210520_overmaxcoast',
     src:  'bangkok-express.png',
-    icons: [
-      {
-        definition: faJsSquare,
-        href: ''
-      }
-    ]
+    icons: [ iconJS ]
   },
   {
     title: 'voenkom bot',
     text: 'echo-bot-entertainer',
     href: 'https://t.me/vam_povistka_bot',
     src:  'voenkom-bot.png',
-    icons: [
-      {
-        definition: faSqlite,
-        href: ''
-      },
-      {
-        definition: faJsSquare,
-        href: ''
-      }
-    ]
+    icons: [ iconSqlite, iconNode ]
   }
 ];
