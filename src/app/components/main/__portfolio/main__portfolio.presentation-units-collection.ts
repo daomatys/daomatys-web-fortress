@@ -96,9 +96,9 @@ export default [
   },
   {
     title: 'voenkom bot',
-    text: 'bot-entertainer for telegram chats',
-    href: 'https://github.com/daomatys/voenkom-tg-bot',
-    src:  '',
+    text: 'echo-bot-entertainer',
+    href: 'https://t.me/vam_povistka_bot',
+    src:  'voenkom-bot.png',
     icons: [
       {
         definition: faSqlite,
