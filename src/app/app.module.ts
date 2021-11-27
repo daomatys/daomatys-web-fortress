@@ -16,6 +16,7 @@ import { ImageBlockComponent } from './components/image-block/image-block.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { RoadmapComponent } from './components/roadmap/roadmap.component';
 import { RoadmapSampleComponent } from './components/roadmap/__sample/roadmap__sample.component';
+import { PresentationUnitComponent } from './components/presentation-unit/presentation-unit.component';
 
 import { LinkComponent } from './components/link/link.component';
 import { LogotypeComponent } from './components/logotype/logotype.component';
@@ -39,6 +40,7 @@ const appRoutes: Routes = [
       MainCareersComponent,
       MainDefaultComponent,
       MainPortfolioComponent,
+        PresentationUnitComponent,
       MainResumeComponent,
     ImageBlockComponent,
     FooterComponent,
