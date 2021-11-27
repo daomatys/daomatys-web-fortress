@@ -1,5 +1,9 @@
+$unitSide: 25vw;
+$unitGap: 3vw;
+
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(3, 25vw);
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, $unitSide);
+  grid-template-rows: $unitSide;
+  grid-gap: $unitGap;
 }
