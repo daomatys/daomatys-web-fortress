@@ -4,7 +4,7 @@ import { PresentationUnitInterface } from '../../presentation-unit/presentation-
 import presentationUnitsArray from './main__portfolio.presentation-units-collection';
 
 @Component({
-  selector: 'app-main__portfolio',
+  selector: 'app-main-portfolio',
   templateUrl: './main__portfolio.component.html',
   styleUrls: ['./main__portfolio.component.scss']
 })

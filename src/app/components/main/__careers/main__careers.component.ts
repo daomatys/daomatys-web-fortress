@@ -4,7 +4,7 @@ import { RoadmapSampleInterface } from '../../roadmap/__sample/roadmap__sample.i
 import employersRoadmapSamplesArray from './main__careers.employers-roadmap-samples';
 
 @Component({
-  selector: 'app-main__careers',
+  selector: 'app-main-careers',
   templateUrl: './main__careers.component.html',
   styleUrls: ['./main__careers.component.scss']
 })

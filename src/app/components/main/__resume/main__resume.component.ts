@@ -5,7 +5,7 @@ import { RoadmapSampleInterface } from '../../roadmap/__sample/roadmap__sample.i
 import roadmapSamplesArray from './main__resume.education-roadmap-samples';
 
 @Component({
-  selector: 'app-main__resume',
+  selector: 'app-main-resume',
   templateUrl: './main__resume.component.html',
   styleUrls: ['./main__resume.component.scss']
 })
