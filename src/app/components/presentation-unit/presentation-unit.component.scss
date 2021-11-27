@@ -8,11 +8,10 @@
   width: 100%;
   height: 100%;
 
-  &,
   &__image,
   &__layer_front,
   &__layer_back {
-    border-radius: 20px;
+    border-radius: 50%;
   }
 
   &__layer {
@@ -27,7 +26,7 @@
       height: 100%;
       opacity: 0;
       transition: opacity .8s ease;
-      backdrop-filter: blur(14px) saturate(150%) sepia(20%);
+      backdrop-filter: blur(14px) saturate(110%) sepia(20%);
       color: $hue_title-light;
       text-decoration: none;
 
@@ -63,6 +62,5 @@
     width: 100%;
     background-color: $hue_main-light;
     font-size: 3rem;
-    pointer-events: none;
   }
 }
