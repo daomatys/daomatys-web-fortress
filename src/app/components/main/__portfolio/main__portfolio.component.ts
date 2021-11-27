@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PresentationUnitInterface } from '../../presentation-unit/__interface/presentation-unit__interface';
+import { PresentationUnitInterface } from '../../presentation-unit/presentation-unit.interface';
 
 import presentationUnitsArray from './main__portfolio.presentation-units.collection';
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { SocialIconInterface } from '../social-icon/__interface/social-icon__interface';
+import { SocialIconInterface } from '../social-icon/social-icon.interface';
 import socialIconsItems from './__items-social-icons/footer___items-social-icons';
 
 @Component({

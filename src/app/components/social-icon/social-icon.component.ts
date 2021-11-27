@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { SocialIconInterface } from '../social-icon/__interface/social-icon__interface';
+import { SocialIconInterface } from './social-icon.interface';
 
 @Component({
   selector: 'app-social-icon',

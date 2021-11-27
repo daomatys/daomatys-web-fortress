@@ -1,4 +1,4 @@
-import { SocialIconInterface } from "../../social-icon/__interface/social-icon__interface";
+import { SocialIconInterface } from "../social-icon/social-icon.interface";
 
 export interface PresentationUnitInterface {
   src: string;

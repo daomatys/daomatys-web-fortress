@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PresentationUnitInterface } from './__interface/presentation-unit__interface';
+import { PresentationUnitInterface } from './presentation-unit.interface';
 
 @Component({
   selector: 'app-presentation-unit',

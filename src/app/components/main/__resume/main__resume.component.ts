@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumeBlocksInterface, resumeBlocksArray } from './main__resume.blocks';
-import { RoadmapSampleInterface } from '../../roadmap/__sample-interface/roadmap__interface';
+import { RoadmapSampleInterface } from '../../roadmap/__sample/roadmap__sample.interface';
 
 import roadmapSamplesArray from './main__resume.education-roadmap-samples';
 

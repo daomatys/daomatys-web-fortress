@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RoadmapSampleInterface } from '../../roadmap/__sample-interface/roadmap__interface';
+import { RoadmapSampleInterface } from '../../roadmap/__sample/roadmap__sample.interface';
+
 import employersRoadmapSamplesArray from './main__careers.employers-roadmap-samples';
 
 @Component({
