@@ -23,11 +23,11 @@ import { LogotypeComponent } from './components/logotype/logotype.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 
 const appRoutes: Routes = [
-  { path: '',          component: MainDefaultComponent,   data: { animation: 'DefaultPage'   } },
+  { path: '',          component: MainDefaultComponent,   data: { animation: 'DefaultPage'   }, pathMatch: 'full' },
   { path: 'careers',   component: MainCareersComponent,   data: { animation: 'CareersPage'   } },
   { path: 'resume',    component: MainResumeComponent,    data: { animation: 'ResumePage'    } },
   { path: 'portfolio', component: MainPortfolioComponent, data: { animation: 'PortfolioPage' } },
-  { path: '**', redirectTo: '/'}
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
