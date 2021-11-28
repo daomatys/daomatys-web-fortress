@@ -1,7 +1,7 @@
 @import '/src/variables/variables.scss';
 @import '/src/styles/__text/styles__text.scss';
 
-.app-link {
+.link {
   @extend %styles__text_h2;
   color: $hue_link-dark;
   text-decoration: none;

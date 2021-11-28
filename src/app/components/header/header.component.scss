@@ -8,10 +8,6 @@ $headerInnerGap: 20px;
   @extend %structures__header-n-footer;
   background-color: $hue_main-light;
 
-  &__logo {
-    cursor: crosshair;
-  }
-
   &__navbar {
     display: flex;
     justify-content: space-between;

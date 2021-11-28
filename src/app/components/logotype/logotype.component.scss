@@ -1,8 +1,8 @@
 @import '/src/variables/variables.scss';
 
-.app-logotype {
+.logotype {
   font-family: Neonize;
-  font-size: calcRelativeFontSize( 48 );
+  font-size: 3rem;
   color: $hue_title-light;
   text-transform: uppercase;
 }
