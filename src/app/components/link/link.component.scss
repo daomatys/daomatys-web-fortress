@@ -11,4 +11,8 @@
   &_active {
     color: $hue_link-active;
   }
+
+  &_active {
+    pointer-events: none;
+  }
 }
