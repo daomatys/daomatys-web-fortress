@@ -15,6 +15,6 @@ export class PresentationUnitComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.unitImageSrc = '../../assets/' + this.unit.src;
+    this.unitImageSrc = 'assets/' + this.unit.src;
   }
 }
