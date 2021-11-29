@@ -6,21 +6,25 @@ $headerInnerGap: 20px;
 @media only screen and ( max-width: $breakHeaderDeskToTablet ) {
   .header {
     @include tabletOrientation;
-  
-    &__navbar {
-      width: auto;
-    }
   }
 }
 
 @media only screen and ( min-width: $breakHeaderDeskToTablet ) {
   .header {
     @include desktopOrientation;
+  }
+}
 
-    &__navbar {
-      width: 41vw;
-      margin-left: $headerInnerGap;
-    }
+@media only screen and ( max-width: $breakLogoShrinks ) {
+  .header__navbar {
+    width: auto;
+  }
+}
+
+@media only screen and ( min-width: $breakLogoShrinks ) {
+  .header__navbar {
+    width: 41vw;
+    margin-left: $headerInnerGap;
   }
 }
 

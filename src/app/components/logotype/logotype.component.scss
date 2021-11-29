@@ -24,13 +24,13 @@
   }
 }
 
-@media only screen and ( max-width: 1190px ) {
+@media only screen and ( max-width: $breakLogoShrinks ) {
   .logotype:after {
     content: 'dmts';
   }
 }
 
-@media only screen and ( min-width: 1190px ) {
+@media only screen and ( min-width: $breakLogoShrinks ) {
   .logotype:after {
     content: 'daomatys';
   }
