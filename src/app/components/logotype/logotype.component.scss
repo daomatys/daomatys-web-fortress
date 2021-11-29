@@ -1,9 +1,49 @@
 @import '/src/variables/variables.scss';
 
+@media only screen and ( max-width: $breakHeaderDeskToTablet ) {
+  .logotype {
+    &::after {
+      display: none;
+    } 
+    
+    &::before {
+      display: initial;
+    }
+  }
+}
+
+@media only screen and ( min-width: $breakHeaderDeskToTablet ) {
+  .logotype {
+    &::before {
+      display: none;
+    } 
+    
+    &::after {
+      display: initial;
+    }
+  }
+}
+
+@media only screen and ( max-width: 1190px ) {
+  .logotype:after {
+    content: 'dmts';
+  }
+}
+
+@media only screen and ( min-width: 1190px ) {
+  .logotype:after {
+    content: 'daomatys';
+  }
+}
+
 .logotype {
   font-family: Neonize;
   font-size: 3rem;
   color: $hue_title-light;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::before {
+    content: 'daomatys';
+  }
 }

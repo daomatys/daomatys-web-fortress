@@ -16,7 +16,7 @@ export const resumeBlocksArray = [
     title: "languages",
     texts: [
       "russian — mother tongue",
-      "english — upper-intermediate"
+      "english — upper intermediate"
     ]
   },
   {
