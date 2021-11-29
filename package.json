@@ -43,8 +43,9 @@
   "scripts": {
     "ng": "ng",
     "host": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "dev": "ng b",
+    "prod": "ng b --prod",
+    "watch": "ng b --watch --configuration development",
     "test": "ng test",
     "pgen": "pug src --pretty",
     "phost": "pug src --pretty --watch"
