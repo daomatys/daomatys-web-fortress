@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnChanges, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { mainAnimation } from './main.animation';
 
@@ -11,11 +11,40 @@ import { mainAnimation } from './main.animation';
   ]
 })
 
-export class MainComponent implements OnInit {
+export class MainComponent implements OnChanges, OnInit {
 
-  ngOnInit() {}
+  startHeight: number;
+  endHeight: number;
+  heights: {
+    start: number,
+    end: number
+  };
+
+  constructor( private elem: ElementRef ) {}
+
+  ngOnInit() {
+    this.startHeight = this.elem.nativeElement.clientHeight;
+    this.endHeight = this.elem.nativeElement.clientHeight;
+    this.heights = {
+      start: this.startHeight,
+      end: this.endHeight
+    };
+  }
+
+  ngOnChanges() {
+    this.endHeight = this.elem.nativeElement.clientHeight;
+    console.log( this.endHeight, this.startHeight )
+
+
+
+    this.startHeight = this.endHeight;
+  }
   
   prepareRoute( outlet: RouterOutlet ) {
+    this.heights = {
+      start: this.startHeight,
+      end: this.endHeight
+    };
     return outlet?.activatedRouteData?.['animation'];
   }
 }
