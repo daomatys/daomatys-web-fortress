@@ -2,13 +2,13 @@
 @import '/src/styles/__text/styles__text.scss';
 @import '/src/styles/__structures/styles__structures.scss';
 
-@media only screen and ( max-width: 780px ) {
+@media only screen and ( max-width: 768px ) {
   .footer {
     @include tabletOrientation;
   }
 }
 
-@media only screen and ( min-width: 780px ) {
+@media only screen and ( min-width: 768px ) {
   .footer {
     @include desktopOrientation;
   }

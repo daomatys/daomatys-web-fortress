@@ -23,15 +23,15 @@ import { LogotypeComponent } from './components/logotype/logotype.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 
 const appRoutes: Routes = [
-  { path: '',          component: MainDefaultComponent,   data: { animation: 'DefaultPage'   }, pathMatch: 'full' },
+  { path: '',          component: MainDefaultComponent,   data: { animation: 'DefaultPage'   } },
   { path: 'careers',   component: MainCareersComponent,   data: { animation: 'CareersPage'   } },
   { path: 'resume',    component: MainResumeComponent,    data: { animation: 'ResumePage'    } },
   { path: 'portfolio', component: MainPortfolioComponent, data: { animation: 'PortfolioPage' } },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
-  declarations: [			
+  declarations: [
     AppComponent,
     HeaderComponent,
       LogotypeComponent,
@@ -53,9 +53,9 @@ const appRoutes: Routes = [
     AppRoutingModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot( appRoutes )
+    RouterModule.forRoot( appRoutes, { useHash: true } )
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule {}

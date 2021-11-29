@@ -13,6 +13,7 @@
 @mixin tabletOrientation {
   flex-direction: column;
   justify-content: center;
+  gap: 16px;
 }
 
 @mixin desktopOrientation {
