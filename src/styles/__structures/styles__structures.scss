@@ -4,8 +4,19 @@
 }
 
 %structures__header-n-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-block: 64px;
+  &_tablet,
+  &_desktop {
+    display: flex;
+    align-items: center;
+    padding-block: 64px;
+  }
+
+  &_tablet {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &_desktop {
+    justify-content: space-between;
+  }
 }

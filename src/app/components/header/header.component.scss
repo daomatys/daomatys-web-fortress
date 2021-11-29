@@ -1,17 +1,35 @@
 @import '/src/variables/variables.scss';
 @import '/src/styles/__structures/styles__structures.scss';
 
+@media only screen and ( max-width: $breakHeaderDeskToTablet ) {
+  .header {
+    @extend %structures__header-n-footer_tablet;
+  
+    &__navbar {
+      width: unset;
+    }
+  }
+}
+
+@media only screen and ( min-width: $breakHeaderDeskToTablet ) {
+  .header {
+    @extend %structures__header-n-footer_desktop;
+
+    &__navbar {
+      width: 41vw;
+    }
+  }
+}
+
 $headerInnerGap: 20px;
 
 .header {
   @extend %structures__padding;
-  @extend %structures__header-n-footer;
   background-color: $hue_main-light;
 
   &__navbar {
     display: flex;
     justify-content: space-between;
-    width: 41vw;
     margin-left: $headerInnerGap;
     gap: $headerInnerGap;
   }
