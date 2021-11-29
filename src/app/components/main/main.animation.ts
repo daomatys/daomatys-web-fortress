@@ -4,7 +4,7 @@ const easing:string = '.4s ease';
 
 export const mainAnimation = 
   trigger('routeAnimations', [
-    transition('* <=> *', [
+    transition('* <=> *', [/*
 
       query(':enter', style({
         opacity: '0',
@@ -23,6 +23,6 @@ export const mainAnimation =
         query(':enter', [
           animate( easing, style({ opacity: '1' }) )
         ])
-      ]),
+      ]),*/
     ])
   ]);
