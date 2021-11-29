@@ -3,7 +3,7 @@
 
 @media only screen and ( max-width: $breakHeaderDeskToTablet ) {
   .header {
-    @extend %structures__header-n-footer_tablet;
+    @include tabletOrientation;
   
     &__navbar {
       width: unset;
@@ -13,7 +13,7 @@
 
 @media only screen and ( min-width: $breakHeaderDeskToTablet ) {
   .header {
-    @extend %structures__header-n-footer_desktop;
+    @include desktopOrientation;
 
     &__navbar {
       width: 41vw;
@@ -24,6 +24,7 @@
 $headerInnerGap: 20px;
 
 .header {
+  @extend %structures__header-n-footer;
   @extend %structures__padding;
   background-color: $hue_main-light;
 

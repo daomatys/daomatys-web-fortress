@@ -2,6 +2,18 @@
 @import '/src/styles/__text/styles__text.scss';
 @import '/src/styles/__structures/styles__structures.scss';
 
+@media only screen and ( max-width: $breakHeaderDeskToTablet ) {
+  .footer {
+    @include tabletOrientation;
+  }
+}
+
+@media only screen and ( min-width: $breakHeaderDeskToTablet ) {
+  .footer {
+    @include desktopOrientation;
+  }
+}
+
 .footer {
   @extend %styles__text_h2;
   @extend %structures__padding;

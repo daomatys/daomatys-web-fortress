@@ -4,19 +4,16 @@
 }
 
 %structures__header-n-footer {
-  &_tablet,
-  &_desktop {
-    display: flex;
-    align-items: center;
-    padding-block: 64px;
-  }
+  display: flex;
+  align-items: center;
+  padding-block: 64px;
+}
 
-  &_tablet {
-    flex-direction: column;
-    justify-content: center;
-  }
+@mixin tabletOrientation {
+  flex-direction: column;
+  justify-content: center;
+}
 
-  &_desktop {
-    justify-content: space-between;
-  }
+@mixin desktopOrientation {
+  justify-content: space-between;
 }
