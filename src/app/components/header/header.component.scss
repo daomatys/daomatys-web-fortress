@@ -7,6 +7,7 @@ $headerInnerGap: 20px;
   .header__navbar {
     @include tabletOrientation;
     align-items: center;
+    margin-top: 16px;
   }
 }
 

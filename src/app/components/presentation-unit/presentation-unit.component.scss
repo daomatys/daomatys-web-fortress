@@ -1,12 +1,27 @@
 @import '/src/variables/variables.scss';
 @import '/src/styles/__text/styles__text.scss';
 
+@media only screen and ( max-width: $breakHeaderTabletToMobile ) {
+  .presentation-unit {
+    &__layer_front {
+      display: none;
+    }
+  }
+}
+@media only screen and ( min-width: $breakHeaderTabletToMobile ) {
+  .presentation-unit {
+    &__layer_front {
+      display: flex;
+    }
+  }
+}
+
 .presentation-unit {
+  display: flex;
   position: relative;
 
   &,
   &__layer_front {
-    display: flex;
     justify-content: center;
   }
 
@@ -36,15 +51,22 @@
       flex-direction: column;
       align-items: center;
       gap: 10%;
-      opacity: 0;
       transition: opacity .8s ease;
-      -webkit-backdrop-filter: blur(14px) saturate(110%) sepia(20%);
-      backdrop-filter: blur(14px) saturate(110%) sepia(20%);
+      background-color: rgba( $sisal, .8 );
       color: $hue_title-light;
       text-decoration: none;
+      opacity: 0;
 
       &:hover {
         opacity: 1;
+      }
+    }
+
+    @supports ( (-webkit-backdrop-filter: none) or (backdrop-filter: none) ) {
+      &_front {
+        background-color: rgba( $sisal, .05 );
+        -webkit-backdrop-filter: blur(14px) saturate(110%) sepia(20%);
+        backdrop-filter: blur(14px) saturate(110%) sepia(20%);
       }
     }
   }
