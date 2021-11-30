@@ -1,7 +1,13 @@
+@import '/src/variables/variables.scss';
+
+$percent: .82;
+$structureWidth: percentage( $percent );
+$structurePaddingInline: percentage( ( 1 - $percent ) / 2 );
+
 %structures__padding {
-  padding-inline: 9%;
-  width: 82%;
-  max-width: 1312px;
+  padding-inline: $structurePaddingInline;
+  width: $structureWidth;
+  max-width: calc( $breakAppUpscale * $percent );
 }
 
 %structures__header-n-footer {
