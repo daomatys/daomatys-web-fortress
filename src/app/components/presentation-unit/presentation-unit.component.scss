@@ -32,23 +32,25 @@
   &__layer_back {
     width: 100%;
     height: 100%;
-  }
-
-  &__image,
-  &__layer_front,
-  &__layer_back {
     border-radius: 50%;
   }
 
-  &__layer {
-    &_back {
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+  &__image {
+    object-fit: cover;
+  }
 
+  &__shadow-mask {
+    top: 0px;
+    box-shadow: inset 3px 3px 16px 0px $hue_main-dark;
+  }
+
+  &__shadow-mask,
+  &__layer_front {
+    position: absolute;
+  }
+
+  &__layer {
     &_front {
-      position: absolute;
       flex-direction: column;
       align-items: center;
       gap: 10%;
@@ -70,17 +72,6 @@
         backdrop-filter: blur(14px) saturate(110%) sepia(20%);
       }
     }
-  }
-
-  &__image {
-    object-fit: cover;
-  }
-
-  &__shadow-mask {
-    position: absolute;
-    top: 0px;
-    border-radius: 50%;
-    box-shadow: inset 3px 3px 16px 0px $hue_main-dark;
   }
 
   &__text,
