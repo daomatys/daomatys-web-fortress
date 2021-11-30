@@ -1,13 +1,13 @@
 %structures__padding {
   padding-inline: 9%;
   width: 82%;
+  max-width: 1312px;
 }
 
 %structures__header-n-footer {
   display: flex;
   align-items: center;
   padding-block: 64px;
-  max-width: 1600px;
 }
 
 @mixin tabletOrientation {
