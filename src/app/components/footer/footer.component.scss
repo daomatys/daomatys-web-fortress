@@ -2,12 +2,17 @@
 @import '/src/styles/__text/styles__text.scss';
 @import '/src/styles/__structures/styles__structures.scss';
 
+@media only screen and ( max-width: $breakFooterMin ) {
+  .footer__proposal {
+    display: none;
+  }
+}
+
 @media only screen and ( max-width: $breakFooterAndResume ) {
   .footer {
     @include tabletOrientation;
   }
 }
-
 @media only screen and ( min-width: $breakFooterAndResume ) {
   .footer {
     @include desktopOrientation;
