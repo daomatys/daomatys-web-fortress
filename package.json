@@ -44,8 +44,8 @@
     "ng": "ng",
     "host": "ng serve",
     "dev": "ng b",
-    "prod": "ng b --prod",
-    "watch": "ng b --watch --configuration development",
+    "prod": "ng b --configuration production",
+    "watch": "ng b --watch",
     "test": "ng test",
     "pgen": "pug src --pretty",
     "phost": "pug src --pretty --watch"
