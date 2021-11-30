@@ -1,15 +1,35 @@
-@import '/src/styles/__text/styles__text.scss';
 @import '/src/variables/variables.scss';
+@import '/src/styles/__text/styles__text.scss';
+
+@media only screen and ( max-width: $breakFooterAndResume ) {
+  .resume {
+    display: grid;
+    grid-template: 
+      "photo"
+      "a"
+      "b"
+      "c"
+      "d" 
+      "e"
+      "edu";
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and ( min-width: $breakFooterAndResume ) {
+  .resume {
+    display: grid;
+    grid-template: 
+      "a photo"
+      "b photo"
+      "c photo"
+      "d e"
+      "edu edu";
+    grid-template-columns: auto 275px;
+  }
+}
 
 .resume {
-  display: grid;
-  grid-template: 
-    "a photo"
-    "b photo"
-    "c photo"
-    "d e"
-    "edu edu";
-  grid-template-columns: auto 275px;
   grid-gap: 48px;
 
   &__block {

@@ -38,6 +38,7 @@
       gap: 10%;
       opacity: 0;
       transition: opacity .8s ease;
+      -webkit-backdrop-filter: blur(14px) saturate(110%) sepia(20%);
       backdrop-filter: blur(14px) saturate(110%) sepia(20%);
       color: $hue_title-light;
       text-decoration: none;
