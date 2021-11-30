@@ -19,7 +19,7 @@ $headerInnerGap: 20px;
     width: auto;
   }
 }
-@media only screen and ( min-width: $breakLogoShrinks ) {
+@media only screen and ( min-width: $breakLogoShrinks ) and ( max-width: $breakAppUpscale ) {
   .header__navbar {
     width: 41vw;
     margin-left: $headerInnerGap;
@@ -28,7 +28,7 @@ $headerInnerGap: 20px;
 
 @media only screen and ( min-width: $breakAppUpscale ) {
   .header__navbar {
-    width: 656px !important;
+    width: 656px;
     margin-left: $headerInnerGap;
   }
 }

@@ -1,40 +1,19 @@
 @import '/src/variables/variables.scss';
 @import '/src/assets/fonts/neonize/fonts.scss';
 
-@media only screen and ( max-width: $breakHeaderDeskToTablet ) {
-  .logotype {
-    &::after {
-      display: none;
-    } 
-    
-    &::before {
-      display: initial;
+@media 
+  only screen and ( min-width: $breakHeaderDeskToTablet ) and ( max-width: $breakLogoShrinks ) {
+    .logotype:after {
+      content: 'dmts';
     }
-  }
 }
 
-@media only screen and ( min-width: $breakHeaderDeskToTablet ) {
-  .logotype {
-    &::before {
-      display: none;
-    } 
-    
-    &::after {
-      display: initial;
+@media 
+  only screen and ( min-width: $breakLogoShrinks ),
+  only screen and ( max-width: $breakHeaderDeskToTablet ) {
+    .logotype:after {
+      content: 'daomatys';
     }
-  }
-}
-
-@media only screen and ( max-width: $breakLogoShrinks ) {
-  .logotype:after {
-    content: 'dmts';
-  }
-}
-
-@media only screen and ( min-width: $breakLogoShrinks ) {
-  .logotype:after {
-    content: 'daomatys';
-  }
 }
 
 .logotype {
@@ -43,8 +22,4 @@
   color: $hue_title-light;
   text-transform: uppercase;
   text-decoration: none;
-
-  &::before {
-    content: 'daomatys';
-  }
 }
