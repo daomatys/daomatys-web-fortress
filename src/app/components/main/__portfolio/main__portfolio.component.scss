@@ -1,9 +1,30 @@
-$unitSide: 25vw;
-$unitGap: 3vw;
+@import '/src/variables/variables.scss';
+
+$unitSide: .25;
+$unitGap: .03;
+
+@function fractionToVW( $fraction ) {
+  @return #{ $fraction * 100 }vw;
+}
+@function fractionToPX( $fraction ) {
+  @return calc( $breakAppUpscale * $fraction );
+}
+
+@media only screen and ( max-width: $breakAppUpscale ) {
+  .portfolio {
+    grid-template-columns: repeat( 3, fractionToVW($unitSide) );
+    grid-auto-rows: fractionToVW($unitSide);
+    grid-gap: fractionToVW($unitGap);
+  }
+}
+@media only screen and ( min-width: $breakAppUpscale ) {
+  .portfolio {
+    grid-template-columns: repeat( 3, fractionToPX( $unitSide ) );
+    grid-auto-rows: fractionToPX( $unitSide );
+    grid-gap: fractionToPX( $unitGap );
+  }
+}
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(3, $unitSide);
-  grid-auto-rows: $unitSide;
-  grid-gap: $unitGap;
 }
