@@ -1,6 +1,12 @@
 @import '/src/variables/variables.scss';
 @import '/src/styles/__text/styles__text.scss';
 
+@media only screen and ( max-width: $breakHeaderMin ) {
+  .resume__edu {
+    display: none !important;
+  }
+}
+
 @media only screen and ( max-width: $breakFooterAndResume ) {
   .resume {
     display: grid;
