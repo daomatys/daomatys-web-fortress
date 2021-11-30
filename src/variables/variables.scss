@@ -25,14 +25,7 @@ $hue_link-dark: $deep-teal-shade_normal;
 $hue_text-light: $sisal;
 
 
-//gradients
-@function defineGradient( $primary, $secondary ) {
-  @return linear-gradient(180deg, $primary 0%, $secondary 100%);
-}
-$gradient_primary: defineGradient( $hue_main-light, $hue_main-dark );
-
-
-//media queries breakpoints
+//media breakpoints
 $breakHeaderTabletToMobile: 610px;
 $breakFooterAndResume: 820px;
 $breakHeaderDeskToTablet: 930px;
