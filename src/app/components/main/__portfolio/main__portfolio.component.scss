@@ -1,7 +1,13 @@
 @import '/src/variables/variables.scss';
 
-$unitSide: .25;
-$unitGap: .03;
+$unitMobileSide: .81;
+$unitMobileGap: .1;
+
+$unitTabletSide: .38;
+$unitTabletGap: .05;
+
+$unitDesktopSide: .25;
+$unitDesktopGap: .03;
 
 @function fractionToVW( $fraction ) {
   @return #{ $fraction * 100 }vw;
@@ -10,19 +16,37 @@ $unitGap: .03;
   @return calc( $breakAppUpscale * $fraction );
 }
 
-@media only screen and ( max-width: $breakAppUpscale ) {
-  .portfolio {
-    grid-template-columns: repeat( 3, fractionToVW($unitSide) );
-    grid-auto-rows: fractionToVW($unitSide);
-    grid-gap: fractionToVW($unitGap);
-  }
+@media
+  only screen and ( max-width: $breakHeaderTabletToMobile ) {
+    .portfolio {
+      grid-template-columns: repeat( 1, fractionToVW( $unitMobileSide ) );
+      grid-auto-rows: fractionToVW( $unitMobileSide );
+      grid-gap:       fractionToVW( $unitMobileGap );
+    }
 }
-@media only screen and ( min-width: $breakAppUpscale ) {
-  .portfolio {
-    grid-template-columns: repeat( 3, fractionToPX( $unitSide ) );
-    grid-auto-rows: fractionToPX( $unitSide );
-    grid-gap: fractionToPX( $unitGap );
-  }
+@media
+  only screen and ( min-width: $breakHeaderTabletToMobile ) and ( max-width: $breakLogoShrinks ) {
+    .portfolio {
+      grid-template-columns: repeat( 2, fractionToVW( $unitTabletSide ) );
+      grid-auto-rows: fractionToVW( $unitTabletSide );
+      grid-gap:       fractionToVW( $unitTabletGap );
+    }
+}
+@media
+  only screen and ( min-width: $breakLogoShrinks ) and ( max-width: $breakAppUpscale ) {
+    .portfolio {
+      grid-template-columns: repeat( 3, fractionToVW($unitDesktopSide) );
+      grid-auto-rows: fractionToVW( $unitDesktopSide );
+      grid-gap:       fractionToVW( $unitDesktopGap );
+    }
+}
+@media
+  only screen and ( min-width: $breakAppUpscale ) {
+    .portfolio {
+      grid-template-columns: repeat( 3, fractionToPX( $unitDesktopSide ) );
+      grid-auto-rows: fractionToPX( $unitDesktopSide );
+      grid-gap: fractionToPX( $unitDesktopGap );
+    }
 }
 
 .portfolio {
