@@ -39,7 +39,7 @@
 
 .logotype {
   font-family: Neonize;
-  font-size: 3rem;
+  font-size: var(--fontsize-h1);
   color: $hue_title-light;
   text-transform: uppercase;
   text-decoration: none;

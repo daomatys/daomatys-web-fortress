@@ -33,6 +33,7 @@ $gradient_primary: defineGradient( $hue_main-light, $hue_main-dark );
 
 
 //media queries breakpoints
+$breakHeaderTabletToMobile: 610px;
 $breakFooterAndResume: 820px;
 $breakHeaderDeskToTablet: 930px;
 $breakLogoShrinks: 1190px;

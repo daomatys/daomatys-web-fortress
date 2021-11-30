@@ -1,3 +1,24 @@
+@import '/src/variables/variables.scss';
+
+@media only screen and ( max-width: $breakHeaderTabletToMobile ) {
+  :root {
+    --fontsize-h1: 2rem;
+    --fontsize-h2: 1.5rem;
+    --fontsize-h3: 1rem;
+  }
+}
+@media only screen and ( min-width: $breakHeaderTabletToMobile ) {
+  :root {
+    --fontsize-h1: 3rem;
+    --fontsize-h2: 2rem;
+    --fontsize-h3: 1.5rem;
+  }
+}
+
+:root {
+  --fontsize-body: 1rem;
+}
+
 body {
   margin: 0;
 }
