@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-93.734 0 500.00001 228.00001"
+   version="1.1"
+   id="svg31"
+   sodipodi:docname="thumb-forest.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   width="500"
+   height="228"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs35" />
+  <sodipodi:namedview
+     id="namedview33"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="0.87588811"
+     inkscape:cx="267.72826"
+     inkscape:cy="172.9673"
+     inkscape:window-width="1360"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg31" />
+  <path
+     id="rect519-29"
+     style="fill:#064033;fill-opacity:1;stroke-width:1.01408"
+     d="m -93.72618,28 499.98417,100 0.008,-0.98684 L -93.734,228 Z"
+     sodipodi:nodetypes="ccccc" />
+  <rect
+     style="fill:none"
+     id="rect369"
+     width="500"
+     height="228"
+     x="-247.12149"
+     y="301.93118" />
+  <path
+     id="rect519-2"
+     style="fill:#03241c;fill-opacity:1;stroke-width:1.01408"
+     d="M 406.25818,78 -93.726,178 h -0.008 l 500,50 z"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     id="rect519"
+     style="fill:#000705;fill-opacity:1;stroke-width:1.01408"
+     d="m -93.72618,128 499.98417,100 0.008,-0.98684 H -93.734 Z"
+     sodipodi:nodetypes="ccccc" />
+</svg>
