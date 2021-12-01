@@ -3,7 +3,7 @@
    viewBox="-93.734 0 500.00001 228.00001"
    version="1.1"
    id="svg31"
-   sodipodi:docname="thumb-forest.svg"
+   sodipodi:docname="forest_flat.svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    width="500"
    height="228"
@@ -22,9 +22,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="1"
      showgrid="false"
-     inkscape:zoom="0.87588811"
-     inkscape:cx="267.72826"
-     inkscape:cy="172.9673"
+     inkscape:zoom="2"
+     inkscape:cx="179.75"
+     inkscape:cy="165.25"
      inkscape:window-width="1360"
      inkscape:window-height="745"
      inkscape:window-x="-8"
@@ -34,8 +34,18 @@
   <path
      id="rect519-29"
      style="fill:#064033;fill-opacity:1;stroke-width:1.01408"
-     d="m -93.72618,28 499.98417,100 0.008,-0.98684 L -93.734,228 Z"
-     sodipodi:nodetypes="ccccc" />
+     d="M -93.72618,28 406.266,128 c -164.29991,31.24028 -333.984804,66.4693 -500,100 z"
+     sodipodi:nodetypes="cccc" />
+  <path
+     id="rect519-2"
+     style="fill:#03241c;fill-opacity:1;stroke-width:1.01409"
+     d="M 406.26618,78 -93.734,178 c 165.799749,15.71959 333.55605,33.18369 500.008,50 z"
+     sodipodi:nodetypes="cccc" />
+  <path
+     id="rect519"
+     style="fill:#000705;fill-opacity:1;stroke-width:1.00339"
+     d="m -93.734,128 500,100 c -164.51643,0.21856 -334.170354,0.32042 -500,0 z"
+     sodipodi:nodetypes="cccc" />
   <rect
      style="fill:none"
      id="rect369"
@@ -43,14 +53,4 @@
      height="228"
      x="-247.12149"
      y="301.93118" />
-  <path
-     id="rect519-2"
-     style="fill:#03241c;fill-opacity:1;stroke-width:1.01408"
-     d="M 406.25818,78 -93.726,178 h -0.008 l 500,50 z"
-     sodipodi:nodetypes="ccccc" />
-  <path
-     id="rect519"
-     style="fill:#000705;fill-opacity:1;stroke-width:1.01408"
-     d="m -93.72618,128 499.98417,100 0.008,-0.98684 H -93.734 Z"
-     sodipodi:nodetypes="ccccc" />
 </svg>
