@@ -1,4 +1,6 @@
 
-<main class="main" [@routeAnimations]="prepareRoute(outlet)">
-  <router-outlet #outlet="outlet"></router-outlet>
+<main class="main">
+  <div class="main__content" [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div><img class="main__image" src="assets/forest_flat.svg"/>
 </main>

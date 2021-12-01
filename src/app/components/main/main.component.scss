@@ -2,9 +2,19 @@
 @import '/src/styles/__structures/styles__structures.scss';
 
 .main {
-  @extend %structures__padding;
-  display: flex;
-  justify-content: center;
-  padding-block: 5px;
+  width: 100%;
   background-color: $hue_main-light;
+
+  &__content {
+    @extend %structures__padding;
+    display: flex;
+    justify-content: center;
+    padding-block: 5px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    pointer-events: none;
+  }
 }

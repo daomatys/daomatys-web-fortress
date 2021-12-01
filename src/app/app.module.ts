@@ -12,7 +12,6 @@ import { MainCareersComponent } from './components/main/__careers/main__careers.
 import { MainDefaultComponent } from './components/main/__default/main__default.component';
 import { MainPortfolioComponent } from './components/main/__portfolio/main__portfolio.component';
 import { MainResumeComponent } from './components/main/__resume/main__resume.component';
-import { ImageBlockComponent } from './components/image-block/image-block.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RoadmapComponent } from './components/roadmap/roadmap.component';
 import { RoadmapSampleComponent } from './components/roadmap/__sample/roadmap__sample.component';
@@ -42,7 +41,6 @@ const appRoutes: Routes = [
       MainPortfolioComponent,
         PresentationUnitComponent,
       MainResumeComponent,
-    ImageBlockComponent,
     FooterComponent,
       SocialIconComponent,
     RoadmapComponent,

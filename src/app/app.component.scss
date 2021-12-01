@@ -2,7 +2,6 @@
 
 app-header,
 app-main,
-app-image-block,
 app-footer {
   display: flex;
   justify-content: center;
@@ -11,8 +10,7 @@ app-footer {
 }
 
 app-header,
-app-main,
-app-image-block {
+app-main {
   background-color: $hue_main-light;
 }
 
