@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnChanges, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { mainAnimation } from './main.animation';
 
@@ -11,13 +11,11 @@ import { mainAnimation } from './main.animation';
   ]
 })
 
-export class MainComponent implements OnChanges, OnInit {
+export class MainComponent implements OnInit {
 
   constructor( private elem: ElementRef ) {}
 
   ngOnInit() {}
-
-  ngOnChanges() {}
   
   prepareRoute( outlet: RouterOutlet ) {
     return outlet?.activatedRouteData?.['animation'];
