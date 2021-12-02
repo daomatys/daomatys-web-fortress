@@ -1,5 +1,5 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterOutlet, RouterState, UrlSegment } from '@angular/router';
 import { mainAnimation } from './main.animation';
 
 @Component({
@@ -13,11 +13,30 @@ import { mainAnimation } from './main.animation';
 
 export class MainComponent implements OnInit {
 
-  constructor( private elem: ElementRef ) {}
+  public currentRoutePath:string;
+  public imagePath:string;
 
-  ngOnInit() {}
+  constructor( ) {
+  }
+
+  ngOnInit() {
+    this.currentRoutePath = '';
+  }
   
   prepareRoute( outlet: RouterOutlet ) {
+    const newRoutePath:string = outlet?.activatedRoute.snapshot.url[0]?.path;
+
+    if ( this.currentRoutePath !== newRoutePath ) {
+      this.currentRoutePath = newRoutePath;
+
+      if ( newRoutePath ) {
+        this.imagePath = "assets/forest_flat.svg";
+      }
+      if ( !newRoutePath ) {
+        this.imagePath = "assets/forest.svg";
+      }
+    }
+
     return outlet?.activatedRouteData?.['animation'];
   }
 }
