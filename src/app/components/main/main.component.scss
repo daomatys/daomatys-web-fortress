@@ -4,7 +4,6 @@
 .main {
   flex-direction: column;
   align-items: center;
-  background-color: $hue_main-light;
 
   &,
   &__content {
@@ -20,6 +19,7 @@
     @extend %structures__padding;
     justify-content: center;
     padding-block: 5px;
+    height: 100%;
   }
 
   &__image {
