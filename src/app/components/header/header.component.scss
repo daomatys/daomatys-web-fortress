@@ -14,6 +14,10 @@ $headerInnerGap: 20px;
 @media only screen and ( max-width: $breakHeaderDeskToTablet ) {
   .header {
     @include tabletOrientation;
+    
+    &__navbar {
+      width: 100%;
+    }
   }
 }
 @media only screen and ( min-width: $breakHeaderDeskToTablet ) {
@@ -22,11 +26,6 @@ $headerInnerGap: 20px;
   }
 }
 
-@media only screen and ( max-width: $breakLogoShrinks ) {
-  .header__navbar {
-    width: auto;
-  }
-}
 @media only screen and ( min-width: $breakLogoShrinks ) and ( max-width: $breakAppUpscale ) {
   .header__navbar {
     width: 41vw;
