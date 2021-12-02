@@ -26,7 +26,7 @@ export class MainComponent implements OnInit {
     const newPath:string = outlet?.activatedRoute.snapshot.url[0]?.path;
 
     this.defineForestImagePath( newPath );
-
+    
     return outlet?.activatedRouteData?.['animation'];
   }
 
@@ -35,8 +35,6 @@ export class MainComponent implements OnInit {
 
     if ( currentPath !== newPath ) {
       this.currentRoutePath = newPath;
-
-      console.log(currentPath, newPath)
 
       if ( newPath ) {
         this.imagePath = "assets/forest_flat.svg";
