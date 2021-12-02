@@ -16,27 +16,34 @@ export class MainComponent implements OnInit {
   public currentRoutePath:string;
   public imagePath:string;
 
-  constructor( ) {
-  }
+  constructor( ) {}
 
   ngOnInit() {
     this.currentRoutePath = '';
   }
   
   prepareRoute( outlet: RouterOutlet ) {
-    const newRoutePath:string = outlet?.activatedRoute.snapshot.url[0]?.path;
+    const newPath:string = outlet?.activatedRoute.snapshot.url[0]?.path;
 
-    if ( this.currentRoutePath !== newRoutePath ) {
-      this.currentRoutePath = newRoutePath;
+    this.defineForestImagePath( newPath );
 
-      if ( newRoutePath ) {
+    return outlet?.activatedRouteData?.['animation'];
+  }
+
+  defineForestImagePath( newPath:string ) {
+    const currentPath:string = this.currentRoutePath;
+
+    if ( currentPath !== newPath ) {
+      this.currentRoutePath = newPath;
+
+      console.log(currentPath, newPath)
+
+      if ( newPath ) {
         this.imagePath = "assets/forest_flat.svg";
       }
-      if ( !newRoutePath ) {
+      if ( !newPath ) {
         this.imagePath = "assets/forest.svg";
       }
     }
-
-    return outlet?.activatedRouteData?.['animation'];
   }
 }
