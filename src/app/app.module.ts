@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; 
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
@@ -21,13 +21,7 @@ import { LinkComponent } from './components/link/link.component';
 import { LogotypeComponent } from './components/logotype/logotype.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 
-const appRoutes: Routes = [
-  { path: '',          component: MainDefaultComponent,   data: { animation: 'DefaultPage'   } },
-  { path: 'careers',   component: MainCareersComponent,   data: { animation: 'CareersPage'   } },
-  { path: 'resume',    component: MainResumeComponent,    data: { animation: 'ResumePage'    } },
-  { path: 'portfolio', component: MainPortfolioComponent, data: { animation: 'PortfolioPage' } },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
-];
+import { APP_ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -51,9 +45,12 @@ const appRoutes: Routes = [
     AppRoutingModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot( appRoutes, { useHash: true } )
+    RouterModule.forRoot( APP_ROUTES, { useHash: true } )
   ],
   providers: [],
-  bootstrap: [ AppComponent ]
+  bootstrap: [
+    AppComponent
+  ]
 })
+
 export class AppModule {}

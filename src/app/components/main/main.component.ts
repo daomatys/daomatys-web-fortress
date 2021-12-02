@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterOutlet, RouterState, UrlSegment } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { mainAnimation } from './main.animation';
 
 @Component({
@@ -26,7 +26,7 @@ export class MainComponent implements OnInit {
     const newPath:string = outlet?.activatedRoute.snapshot.url[0]?.path;
 
     this.defineForestImagePath( newPath );
-    
+
     return outlet?.activatedRouteData?.['animation'];
   }
 
