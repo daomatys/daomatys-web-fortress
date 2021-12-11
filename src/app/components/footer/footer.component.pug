@@ -5,4 +5,4 @@ footer.footer
     span  me, maybe ?
   .footer__social-icons
     ng-container( *ngFor="let socialIcon of socialIcons" )
-      app-social-icon( [socialIcon]="socialIcon" )
+      app-social-icon( [socialIcon]="socialIcon" attr.data-marker="{{socialIcon.marker}}" )

@@ -4,3 +4,7 @@ export interface SocialIconInterface {
   href: string;
   definition: IconDefinition;
 }
+
+export interface MarkedSocialIconInterface extends SocialIconInterface {
+  marker: string;
+}

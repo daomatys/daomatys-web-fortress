@@ -4,18 +4,22 @@ import { faEnvelopeSquare, faPhoneSquare } from '@fortawesome/free-solid-svg-ico
 export default [
   {
     href: 'https://github.com/daomatys',
-    definition: faGithub
+    definition: faGithub,
+    marker: 'rate'
   },
   {
     href: 'tel: +7 952 890-10-23',
-    definition: faPhoneSquare
+    definition: faPhoneSquare,
+    marker: 'call'
   },
   {
     href: 'mailto: overmaxcoast@yandex.ru',
-    definition: faEnvelopeSquare
+    definition: faEnvelopeSquare,
+    marker: 'mail'
   },
   {
     href: 'https://t.me/daomatysss',
-    definition: faTelegram
+    definition: faTelegram,
+    marker: 'ping'
   }
 ]

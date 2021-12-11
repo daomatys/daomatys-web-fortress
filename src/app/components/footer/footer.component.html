@@ -3,7 +3,7 @@
   <div class="footer__proposal"> <span>...so </span><span class="footer__changeable-word">call</span><span> me, maybe ?</span></div>
   <div class="footer__social-icons">
     <ng-container *ngFor="let socialIcon of socialIcons">
-      <app-social-icon [socialIcon]="socialIcon"></app-social-icon>
+      <app-social-icon [socialIcon]="socialIcon" attr.data-marker="{{socialIcon.marker}}"></app-social-icon>
     </ng-container>
   </div>
 </footer>

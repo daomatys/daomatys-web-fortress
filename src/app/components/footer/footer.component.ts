@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { SocialIconInterface } from '../social-icon/social-icon.interface';
+import { MarkedSocialIconInterface } from '../social-icon/social-icon.interface';
 import socialIconsItems from './footer.social-icons-collection';
 
 @Component({
@@ -9,7 +9,7 @@ import socialIconsItems from './footer.social-icons-collection';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  public socialIcons: SocialIconInterface[] = socialIconsItems;
+  public socialIcons: MarkedSocialIconInterface[] = socialIconsItems;
 
   constructor() { }
 
