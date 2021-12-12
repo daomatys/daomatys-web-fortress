@@ -1,15 +1,15 @@
 @import '/src/variables/variables.scss';
 
-app-header,
 app-main,
+app-header,
 app-footer {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-app-header,
-app-main {
+app-main,
+app-header {
   background-color: $hue_main-light;
 }
 
