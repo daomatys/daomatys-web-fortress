@@ -1,2 +1,2 @@
-<a class="app-social-icon" href="{{socialIcon?.href}}" target="{{iconTarget}}" rel="{{iconRel}}">
+<a class="app-social-icon" href="{{socialIcon?.href}}" target="{{iconTarget}}" rel="{{iconRel}}" (mouseenter)="emitMouseEnter( $event?.target )">
   <fa-icon [icon]="socialIcon?.definition"></fa-icon></a>

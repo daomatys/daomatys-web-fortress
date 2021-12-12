@@ -1,14 +1,16 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
-import { SocialIconInterface } from './social-icon.interface';
+import { MarkedSocialIconInterface } from './social-icon.interface';
 
 @Component({
   selector: 'app-social-icon',
   templateUrl: './social-icon.component.html',
   styleUrls: ['./social-icon.component.scss']
 })
+
 export class SocialIconComponent implements OnInit {
-  @Input() socialIcon: SocialIconInterface;
+  @Input() socialIcon: MarkedSocialIconInterface;
+  @Output() onMouseEnter = new EventEmitter<HTMLElement>()
 
   public iconTarget:string;
   public iconRel:string;
@@ -22,4 +24,13 @@ export class SocialIconComponent implements OnInit {
     this.iconRel = casePage ? 'noopener noreferrer' : '' ;
   }
 
+  emitMouseEnter( target:HTMLElement ):void {
+    const marker = target.getAttribute('data-marker');
+
+    console.log(marker)
+
+    if ( marker ) {
+      this.onMouseEnter.emit( target );
+    }
+  }
 }
