@@ -2,6 +2,7 @@ a.app-social-icon(
   href="{{socialIcon?.href}}"
   target="{{iconTarget}}"
   rel="{{iconRel}}"
+  attr.data-marker="{{socialIcon?.marker}}"
   "(mouseenter)"="emitMouseEnter( $event?.target )"
 )
   fa-icon( [icon]="socialIcon?.definition" )
