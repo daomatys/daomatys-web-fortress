@@ -27,8 +27,6 @@ export class SocialIconComponent implements OnInit {
   emitMouseEnter( target:HTMLElement ):void {
     const marker = target.getAttribute('data-marker');
 
-    console.log(marker)
-
     if ( marker ) {
       this.onMouseEnter.emit( target );
     }
