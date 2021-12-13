@@ -2,17 +2,22 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="90.000191mm"
-   height="26.416992mm"
-   viewBox="0 0 90.000191 26.416992"
+   width="23.812498mm"
+   height="6.9894428mm"
+   viewBox="0 0 23.812498 6.9894426"
    version="1.1"
-   id="svg5"
+   id="red-eyes__svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="redeyes.svg"
+   sodipodi:docname="red-eyes.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    #red-eyes__coverage {
+      transition: transform .05s ease;
+    }
+  </style>
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#ffffff"
@@ -23,9 +28,9 @@
      inkscape:pagecheckerboard="1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.4110391"
-     inkscape:cx="232.80715"
-     inkscape:cy="7.4413245"
+     inkscape:zoom="3.9910213"
+     inkscape:cx="25.432087"
+     inkscape:cy="30.94446"
      inkscape:window-width="1360"
      inkscape:window-height="745"
      inkscape:window-x="-8"
@@ -40,25 +45,22 @@
      inkscape:label="Слой 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-23.583056)">
+     transform="translate(0,-20.408111)">
     <path
-       id="rect1206"
-       style="fill:#000705;fill-opacity:1;stroke-width:0.999999"
-       d="M 0,89.132812 V 188.97656 H 340.1582 V 89.132812 Z"
-       transform="scale(0.26458333)" />
+       id="red-eyes__background"
+       style="fill:#000705;fill-opacity:1;stroke-width:0.0700038"
+       d="m 0,20.408111 v 6.989443 h 23.812499 v -6.989443 z" />
     <path
-       id="path846"
-       style="fill:#640a25;fill-opacity:1;stroke-width:1.49645"
-       d="M 0.234375,89.132812 A 94.488189,94.488189 0 0 0 0,94.488281 94.488189,94.488189 0 0 0 94.488281,188.97656 94.488189,94.488189 0 0 0 188.97656,94.488281 94.488189,94.488189 0 0 0 188.82227,89.132812 Z"
-       transform="scale(0.26458333)" />
+       id="red-eyes__eye_left"
+       style="fill:#640a25;fill-opacity:1;stroke-width:0.104758"
+       d="M 0.01640723,20.408111 A 6.6145692,6.6145329 0 0 0 0,20.783015 a 6.6145692,6.6145329 0 0 0 6.6145756,6.614539 6.6145692,6.6145329 0 0 0 6.6145754,-6.614539 6.6145692,6.6145329 0 0 0 -0.0108,-0.374904 z" />
     <path
-       id="path846-5"
-       style="fill:#640a25;fill-opacity:1;stroke-width:1.49645"
-       d="m 151.41602,89.132812 a 94.488189,94.488189 0 0 0 -0.23438,5.355469 94.488189,94.488189 0 0 0 94.48828,94.488279 94.488189,94.488189 0 0 0 94.48828,-94.488279 94.488189,94.488189 0 0 0 -0.15625,-5.355469 z"
-       transform="scale(0.26458333)" />
+       id="red-eyes__eye_right"
+       style="fill:#640a25;fill-opacity:1;stroke-width:0.104758"
+       d="m 10.599756,20.408111 a 6.6145692,6.6145329 0 0 0 -0.01641,0.374904 6.6145692,6.6145329 0 0 0 6.614576,6.614539 6.6145692,6.6145329 0 0 0 6.614575,-6.614539 6.6145692,6.6145329 0 0 0 -0.01094,-0.374904 z" />
     <path
-       id="path1102"
-       style="fill:#000705;fill-opacity:1;stroke-width:0.508114"
-       d="M 0.06201172,11.582755 V 23.583056 A 55,55 0 0 0 45.061846,47.000231 55,55 0 0 0 90.0622,23.582539 V 11.582755 Z" />
+       id="red-eyes__coverage"
+       style="fill:#000705;fill-opacity:1;stroke-width:0.134438"
+       d="m 0,17.233056 v 3.175055 a 14.552052,14.551972 0 0 0 11.906181,6.195747 14.552052,14.551972 0 0 0 11.906318,-6.195883 v -3.174919 z" />
   </g>
 </svg>
