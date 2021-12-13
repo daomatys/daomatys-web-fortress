@@ -10,14 +10,14 @@ import { MarkedSocialIconInterface } from './social-icon.interface';
 
 export class SocialIconComponent implements OnInit {
   @Input() socialIcon: MarkedSocialIconInterface;
-  @Output() onMouseEnter = new EventEmitter<HTMLElement>()
+  @Output() onMouseEnter = new EventEmitter<string>();
 
   public iconTarget:string;
   public iconRel:string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit():void {
     const casePage:boolean = this.socialIcon.href.search('\:\/\/') > -1 ;
 
     this.iconTarget = casePage ? '_blank' : '' ;
@@ -28,7 +28,7 @@ export class SocialIconComponent implements OnInit {
     const marker = target.getAttribute('data-marker');
 
     if ( marker ) {
-      this.onMouseEnter.emit( target );
+      this.onMouseEnter.emit( marker );
     }
   }
 }

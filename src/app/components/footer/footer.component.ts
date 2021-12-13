@@ -10,13 +10,12 @@ import socialIconsItems from './footer.social-icons-collection';
 })
 
 export class FooterComponent {
-  public socialIcons: SocialIconInterface[] = socialIconsItems;
-
+  public socialIcons:SocialIconInterface[] = socialIconsItems;
   public changeableWord:string | null = 'call';
 
   constructor() {}
 
-  onMouseEnterEvent( target:HTMLElement ):void {
-    this.changeableWord = target.getAttribute('data-marker');
+  onMouseEnterEvent( marker:string ):void {
+    this.changeableWord = marker;
   }
 }
