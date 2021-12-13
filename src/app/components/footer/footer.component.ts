@@ -11,7 +11,7 @@ import socialIconsItems from './footer.social-icons-collection';
 
 export class FooterComponent {
   public socialIcons:SocialIconInterface[] = socialIconsItems;
-  public changeableWord:string | null = 'call';
+  public changeableWord:string = 'call';
 
   constructor() {}
 
