@@ -3,7 +3,8 @@ footer.footer
     span ...so
     span.footer__changeable-word  {{changeableWord}}
     span  me, maybe ?
-  object.footer__red-eyes( data="assets/red-eyes.svg" type="image/svg+xml" id="red-eyes" )
+  .footer__red-eyes
+    object( data="assets/red-eyes.svg" type="image/svg+xml" id="red-eyes" )
   .footer__social-icons
     ng-container( *ngFor="let socialIcon of socialIcons" )
       app-social-icon(
