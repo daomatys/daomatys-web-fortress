@@ -7,5 +7,5 @@ footer.footer
     ng-container( *ngFor="let socialIcon of socialIcons" )
       app-social-icon(
         [socialIcon]="socialIcon"
-        "(onMouseEnter)"="onMouseEnterEvent( $event )"
+        "(onMouseEnterTheFooterIcon)"="onMouseEnterEvent( $event )"
       )

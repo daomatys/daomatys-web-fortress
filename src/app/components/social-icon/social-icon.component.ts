@@ -10,7 +10,7 @@ import { MarkedSocialIconInterface } from './social-icon.interface';
 
 export class SocialIconComponent implements OnInit {
   @Input() socialIcon: MarkedSocialIconInterface;
-  @Output() onMouseEnter = new EventEmitter<string>();
+  @Output() onMouseEnterTheFooterIcon = new EventEmitter<string>();
 
   public iconTarget:string;
   public iconRel:string;
@@ -24,11 +24,11 @@ export class SocialIconComponent implements OnInit {
     this.iconRel = casePage ? 'noopener noreferrer' : '' ;
   }
 
-  emitMouseEnter( target:HTMLElement ):void {
+  emitMouseEnterEvent( target:HTMLElement ):void {
     const marker = target.getAttribute('data-marker');
 
     if ( marker ) {
-      this.onMouseEnter.emit( marker );
+      this.onMouseEnterTheFooterIcon.emit( marker );
     }
   }
 }

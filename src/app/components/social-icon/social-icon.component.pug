@@ -3,6 +3,6 @@ a.app-social-icon(
   target="{{iconTarget}}"
   rel="{{iconRel}}"
   attr.data-marker="{{socialIcon?.marker}}"
-  "(mouseenter)"="emitMouseEnter( $event?.target )"
+  "(mouseenter)"="emitMouseEnterEvent( $event?.target )"
 )
   fa-icon( [icon]="socialIcon?.definition" )
