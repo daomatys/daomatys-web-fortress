@@ -22,7 +22,7 @@ export class MainComponent implements OnInit {
     this.currentRoutePath = '';
   }
   
-  prepareRoute( outlet: RouterOutlet ) {
+  prepareRoute( outlet: RouterOutlet ):string {
     const newPath:string = outlet?.activatedRoute.snapshot.url[0]?.path;
 
     this.defineForestImagePath( newPath );
@@ -30,7 +30,7 @@ export class MainComponent implements OnInit {
     return outlet?.activatedRouteData?.['animation'];
   }
 
-  defineForestImagePath( newPath:string ) {
+  defineForestImagePath( newPath:string ):void {
     const currentPath:string = this.currentRoutePath;
 
     if ( currentPath !== newPath ) {
