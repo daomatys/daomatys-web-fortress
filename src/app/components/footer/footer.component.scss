@@ -3,25 +3,30 @@
 @import '/src/styles/__structures/styles__structures.scss';
 
 @media only screen and ( max-width: $breakFooterMin ) {
-  .footer__proposal {
-    display: none;
-  }
-}
-
-@media only screen and ( max-width: $breakHeaderDeskToTablet ) {
-  .footer__red-eyes {
-    display: none;
+  .footer{
+    &__red-eyes,
+    &__proposal {
+      display: none;
+    }
   }
 }
 
 @media only screen and ( max-width: $breakFooterAndResume ) {
   .footer {
     @include tabletOrientation;
+
+    &__red-eyes {
+      position: absolute;
+    }
   }
 }
 @media only screen and ( min-width: $breakFooterAndResume ) {
   .footer {
     @include desktopOrientation;
+
+    &__proposal {
+      width: 388px;
+    }
   }
 }
 
@@ -31,12 +36,12 @@
   @extend %structures__header-n-footer;
   color: $hue_title-light;
 
+  &__red-eyes {
+    height: 16px;
+  }
+
   &__social-icons {
     display: flex;
     gap: 20px;
-  }
-
-  &__red-eyes {
-    height: 32px;
   }
 }
