@@ -25,7 +25,7 @@ export class FooterComponent implements AfterViewInit {
     });
   }
 
-  recursiveWinkAnimation( coverage:Element ) {
+  recursiveWinkAnimation( coverage:Element ):void {
     const applyAnimation = function applyAnimationForReal():void {
       const randomTime = Math.floor( Math.random() * Math.floor( 10000 ) );
 
@@ -36,7 +36,7 @@ export class FooterComponent implements AfterViewInit {
         easing: "ease",
       });
 
-      animation.onfinish = () => setTimeout( applyAnimation, randomTime )
+      animation.onfinish = () => setTimeout( applyAnimation, randomTime );
     }
 
     applyAnimation();
