@@ -81,7 +81,7 @@ export default [
   {
     title: 'bangkok express',
     text: 'study project',
-    href: 'https://github.com/daomatys/jsbasic-20210520_overmaxcoast',
+    href: 'https://daomatys.github.io/jsbasic-20210520_overmaxcoast/',
     src:  'bangkok-express.png',
     icons: [ iconJS ]
   },
