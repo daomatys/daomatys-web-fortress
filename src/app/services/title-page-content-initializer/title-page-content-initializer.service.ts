@@ -1,23 +1,21 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class TitlePageContentInitializerService {
-  private caseVisitedTitlePage:boolean;
+  private caseMessageSource = new BehaviorSubject( false );
+  public caseCurrentPageIsTitle = this.caseMessageSource.asObservable();
 
   constructor() {}
 
   setStateFalse():void {
-    this.caseVisitedTitlePage = false;
+    this.caseMessageSource.next( false )
   }
 
   setStateTrue():void {
-    this.caseVisitedTitlePage = true;
-  }
-
-  getState():boolean {
-    return this.caseVisitedTitlePage;
+    this.caseMessageSource.next( true )
   }
 }

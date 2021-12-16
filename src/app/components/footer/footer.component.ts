@@ -1,4 +1,5 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 import { SocialIconInterface } from '../social-icon/social-icon.interface';
 import socialIconsItems from './footer.social-icons-collection';
@@ -14,12 +15,16 @@ import { TitlePageContentInitializerService } from 'src/app/services/title-page-
   ],
 })
 
-export class FooterComponent implements AfterViewInit {
+export class FooterComponent implements OnInit, AfterViewInit {
   public socialIcons:SocialIconInterface[] = socialIconsItems;
   public changeableWord:string = 'call';
-  public eyesState:boolean = false;
+  public eyesState:boolean;
 
-  constructor( private titlePageInitService:TitlePageContentInitializerService ) {}
+  constructor( private titlePageService:TitlePageContentInitializerService ) {}
+
+  ngOnInit():void {
+    this.titlePageService.caseCurrentPageIsTitle.subscribe( message => this.eyesState = message )
+  }
 
   ngAfterViewInit():void {
     const wrap = ( document.querySelector('#red-eyes') as HTMLObjectElement );
@@ -50,11 +55,5 @@ export class FooterComponent implements AfterViewInit {
 
   onMouseEnterEvent( marker:string ):void {
     this.changeableWord = marker;
-  }
-
-  defineEyesHideTrigger( state:boolean ):void {
-    this.eyesState = this.titlePageInitService.getState();
-
-    console.log( this.eyesState )
   }
 }
