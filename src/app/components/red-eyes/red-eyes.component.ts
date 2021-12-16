@@ -1,7 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
 
-import { TitlePageContentInitializerService } from 'src/app/services/title-page-content-initializer/title-page-content-initializer.service';
-
 @Component({
   selector: 'app-red-eyes',
   templateUrl: './red-eyes.component.html',
@@ -9,7 +7,7 @@ import { TitlePageContentInitializerService } from 'src/app/services/title-page-
 })
 export class RedEyesComponent implements AfterViewInit {
 
-  constructor( private titlePageService:TitlePageContentInitializerService ) {}
+  constructor() {}
 
   ngAfterViewInit():void {
     const wrap = ( document.querySelector('#red-eyes') as HTMLObjectElement );
@@ -17,11 +15,11 @@ export class RedEyesComponent implements AfterViewInit {
     wrap?.addEventListener('load', () => {
       const coverage = ( wrap.contentDocument?.querySelector('#red-eyes__coverage') as Element );
 
-      this.recursiveWinkAnimation( coverage, this.titlePageService );
+      this.recursiveWinkAnimation( coverage );
     });
   }
 
-  recursiveWinkAnimation( coverage:Element, service:TitlePageContentInitializerService ):void {
+  recursiveWinkAnimation( coverage:Element ):void {
     const applyAnimation = function applyAnimationForReal():void {
       const randomTime = Math.floor( Math.random() * Math.floor( 10000 ) );
 
