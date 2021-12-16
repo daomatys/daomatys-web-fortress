@@ -2,22 +2,25 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { mainAnimation } from './main.animation';
 
+import { TitlePageContentInitializerService } from 'src/app/services/title-page-content-initializer/title-page-content-initializer.service';
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
+  providers: [
+    TitlePageContentInitializerService
+  ],
   animations: [
     mainAnimation
   ]
 })
 
 export class MainComponent implements OnInit {
-  @Output() onPageSwitch = new EventEmitter<boolean>();
-
   public currentRoutePath:string;
   public imagePath:string;
 
-  constructor() {}
+  constructor( private titlePageInitService:TitlePageContentInitializerService ) {}
 
   ngOnInit():void {
     this.currentRoutePath = '';
@@ -39,11 +42,11 @@ export class MainComponent implements OnInit {
 
       if ( newPath ) {
         this.imagePath = "assets/forest_flat.svg";
-        this.onPageSwitch.emit( false );
+        this.titlePageInitService.setStateFalse();
       }
       if ( !newPath ) {
         this.imagePath = "assets/forest.svg";
-        this.onPageSwitch.emit( true );
+        this.titlePageInitService.setStateTrue();
       }
     }
   }

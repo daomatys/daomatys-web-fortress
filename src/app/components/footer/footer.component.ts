@@ -3,10 +3,15 @@ import { Component, AfterViewInit } from '@angular/core';
 import { SocialIconInterface } from '../social-icon/social-icon.interface';
 import socialIconsItems from './footer.social-icons-collection';
 
+import { TitlePageContentInitializerService } from 'src/app/services/title-page-content-initializer/title-page-content-initializer.service';
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
+  providers: [
+    TitlePageContentInitializerService
+  ],
 })
 
 export class FooterComponent implements AfterViewInit {
@@ -14,7 +19,7 @@ export class FooterComponent implements AfterViewInit {
   public changeableWord:string = 'call';
   public eyesState:boolean = false;
 
-  constructor() {}
+  constructor( private titlePageInitService:TitlePageContentInitializerService ) {}
 
   ngAfterViewInit():void {
     const wrap = ( document.querySelector('#red-eyes') as HTMLObjectElement );
@@ -48,7 +53,7 @@ export class FooterComponent implements AfterViewInit {
   }
 
   defineEyesHideTrigger( state:boolean ):void {
-    this.eyesState = state;
+    this.eyesState = this.titlePageInitService.getState();
 
     console.log( this.eyesState )
   }
