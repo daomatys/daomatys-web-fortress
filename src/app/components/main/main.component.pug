@@ -1,4 +1,4 @@
-main.main
-  .main__content( [@routeAnimations]="prepareRoute(outlet)" )
+main.main( "[@routeAnimations]"="prepareRoute(outlet)" )
+  .main__content
     router-outlet( #outlet="outlet" )
   img.main__image( src="{{imagePath}}" )

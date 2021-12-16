@@ -24,14 +24,14 @@ export class MainComponent implements OnInit {
   }
   
   prepareRoute( outlet: RouterOutlet ):string {
-    const newPath:string = outlet?.activatedRoute.snapshot.url[0]?.path;
+    const newPath:string = outlet.activatedRoute.snapshot.url[0]?.path;
 
-    this.defineForestImagePath( newPath );
+    this.defineTitlePageContentDisplayingState( newPath );
 
-    return outlet?.activatedRouteData?.['animation'];
+    return outlet.activatedRouteData?.['animation'];
   }
 
-  defineForestImagePath( newPath:string ):void {
+  defineTitlePageContentDisplayingState( newPath:string ):void {
     const currentPath:string = this.currentRoutePath;
     
     if ( currentPath !== newPath ) {

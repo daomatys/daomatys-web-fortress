@@ -1,6 +1,6 @@
 
-<main class="main">
-  <div class="main__content" [@routeAnimations]="prepareRoute(outlet)">
+<main class="main" [@routeAnimations]="prepareRoute(outlet)">
+  <div class="main__content">
     <router-outlet #outlet="outlet"></router-outlet>
   </div><img class="main__image" src="{{imagePath}}"/>
 </main>
