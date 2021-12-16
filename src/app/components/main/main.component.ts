@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { mainAnimation } from './main.animation';
 
@@ -8,9 +8,6 @@ import { TitlePageContentInitializerService } from 'src/app/services/title-page-
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
-  providers: [
-    TitlePageContentInitializerService
-  ],
   animations: [
     mainAnimation
   ]

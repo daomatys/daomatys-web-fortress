@@ -1,5 +1,4 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 
 import { SocialIconInterface } from '../social-icon/social-icon.interface';
 import socialIconsItems from './footer.social-icons-collection';
@@ -9,10 +8,7 @@ import { TitlePageContentInitializerService } from 'src/app/services/title-page-
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'],
-  providers: [
-    TitlePageContentInitializerService
-  ],
+  styleUrls: ['./footer.component.scss']
 })
 
 export class FooterComponent implements OnInit, AfterViewInit {
