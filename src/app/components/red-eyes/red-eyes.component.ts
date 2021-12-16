@@ -5,6 +5,7 @@ import { Component, AfterViewInit } from '@angular/core';
   templateUrl: './red-eyes.component.html',
   styleUrls: ['./red-eyes.component.scss']
 })
+
 export class RedEyesComponent implements AfterViewInit {
 
   constructor() {}
