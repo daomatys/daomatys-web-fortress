@@ -36,10 +36,6 @@
   @extend %structures__header-n-footer;
   color: $hue_title-light;
 
-  &__red-eyes {
-    height: 16px;
-  }
-
   &__social-icons {
     display: flex;
     gap: 20px;
