@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RoadmapComponent } from './components/roadmap/roadmap.component';
 import { RoadmapSampleComponent } from './components/roadmap/__sample/roadmap__sample.component';
 import { PresentationUnitComponent } from './components/presentation-unit/presentation-unit.component';
+import { RedEyesComponent } from './components/red-eyes/red-eyes.component';
 
 import { LinkComponent } from './components/link/link.component';
 import { LogotypeComponent } from './components/logotype/logotype.component';
@@ -36,6 +37,7 @@ import { APP_ROUTES } from './app.routes';
         PresentationUnitComponent,
       MainResumeComponent,
     FooterComponent,
+      RedEyesComponent,
       SocialIconComponent,
     RoadmapComponent,
       RoadmapSampleComponent

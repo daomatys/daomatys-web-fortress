@@ -1,7 +1,7 @@
 
 <footer class="footer">
   <div class="footer__proposal"> <span>...so</span><span class="footer__changeable-word"> {{changeableWord}}</span><span> me, maybe ?</span></div>
-  <object class="footer__red-eyes" *ngIf="eyesState" data="assets/red-eyes.svg" type="image/svg+xml" id="red-eyes"></object>
+  <app-red-eyes class="footer__red-eyes" *ngIf="eyesState"></app-red-eyes>
   <div class="footer__social-icons">
     <ng-container *ngFor="let socialIcon of socialIcons">
       <app-social-icon [socialIcon]="socialIcon" (onMouseEnterTheFooterIcon)="onMouseEnterEvent( $event )"></app-social-icon>
