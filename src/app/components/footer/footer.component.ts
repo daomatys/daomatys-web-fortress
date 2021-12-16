@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { SocialIconInterface } from '../social-icon/social-icon.interface';
 import socialIconsItems from './footer.social-icons-collection';
