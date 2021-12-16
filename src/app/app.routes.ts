@@ -9,6 +9,7 @@ export const APP_ROUTES:Routes = [
   { 
     path: '',
     component: MainDefaultComponent,
+    pathMatch: 'full',
     data: {
       animation: 'DefaultPage'
     }

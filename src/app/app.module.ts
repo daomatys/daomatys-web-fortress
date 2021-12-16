@@ -5,6 +5,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
+import { APP_ROUTES } from './app.routes';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
@@ -17,12 +19,11 @@ import { RoadmapComponent } from './components/roadmap/roadmap.component';
 import { RoadmapSampleComponent } from './components/roadmap/__sample/roadmap__sample.component';
 import { PresentationUnitComponent } from './components/presentation-unit/presentation-unit.component';
 import { RedEyesComponent } from './components/red-eyes/red-eyes.component';
-
 import { LinkComponent } from './components/link/link.component';
 import { LogotypeComponent } from './components/logotype/logotype.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 
-import { APP_ROUTES } from './app.routes';
+import { TitlePageContentInitializerService } from './services/title-page-content-initializer/title-page-content-initializer.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,9 @@ import { APP_ROUTES } from './app.routes';
     BrowserAnimationsModule,
     RouterModule.forRoot( APP_ROUTES, { useHash: true } )
   ],
-  providers: [],
+  providers: [
+    TitlePageContentInitializerService
+  ],
   bootstrap: [
     AppComponent
   ]
