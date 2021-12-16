@@ -12,6 +12,7 @@ import socialIconsItems from './footer.social-icons-collection';
 export class FooterComponent implements AfterViewInit {
   public socialIcons:SocialIconInterface[] = socialIconsItems;
   public changeableWord:string = 'call';
+  public eyesState:boolean = false;
 
   constructor() {}
 
@@ -44,5 +45,11 @@ export class FooterComponent implements AfterViewInit {
 
   onMouseEnterEvent( marker:string ):void {
     this.changeableWord = marker;
+  }
+
+  defineEyesHideTrigger( state:boolean ):void {
+    this.eyesState = state;
+
+    console.log( this.eyesState )
   }
 }

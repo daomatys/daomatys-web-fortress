@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { mainAnimation } from './main.animation';
 
@@ -12,13 +12,14 @@ import { mainAnimation } from './main.animation';
 })
 
 export class MainComponent implements OnInit {
+  @Output() onPageSwitch = new EventEmitter<boolean>();
 
   public currentRoutePath:string;
   public imagePath:string;
 
-  constructor( ) {}
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit():void {
     this.currentRoutePath = '';
   }
   
@@ -32,15 +33,17 @@ export class MainComponent implements OnInit {
 
   defineForestImagePath( newPath:string ):void {
     const currentPath:string = this.currentRoutePath;
-
+    
     if ( currentPath !== newPath ) {
       this.currentRoutePath = newPath;
 
       if ( newPath ) {
         this.imagePath = "assets/forest_flat.svg";
+        this.onPageSwitch.emit( false );
       }
       if ( !newPath ) {
         this.imagePath = "assets/forest.svg";
+        this.onPageSwitch.emit( true );
       }
     }
   }
