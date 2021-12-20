@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { LinkInterface } from '../link/link.interface';
 
 import linksItems from './header.links-collection';

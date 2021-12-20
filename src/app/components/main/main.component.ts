@@ -1,19 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { mainAnimation } from './main.animation';
-
 import { TitlePageContentInitializerService } from 'src/app/services/title-page-content-initializer/title-page-content-initializer.service';
+
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss'],
+  styleUrls: [
+    './main.component.scss'
+  ],
   animations: [
     mainAnimation
   ]
 })
 
+
 export class MainComponent implements OnInit {
+
   public currentRoutePath:string;
   public imagePath:string;
 

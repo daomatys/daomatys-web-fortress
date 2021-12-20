@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
 import { SocialIconInterface } from '../social-icon/social-icon.interface';
-import socialIconsItems from './footer.social-icons-collection';
-
 import { TitlePageContentInitializerService } from 'src/app/services/title-page-content-initializer/title-page-content-initializer.service';
+
+import socialIconsItems from './footer.social-icons-collection';
 
 
 @Component({
