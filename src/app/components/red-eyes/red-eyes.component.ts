@@ -25,8 +25,12 @@ export class RedEyesComponent implements AfterViewInit {
       const randomTime = Math.floor( Math.random() * Math.floor( 10000 ) );
 
       const animation = coverage?.animate({
-        transform: [ "translateY(3px)", "translateY(0px)" ]
-      }, {
+        transform: [
+          "translateY(3px)",
+          "translateY(0px)"
+        ]
+      },
+      {
         duration: 500,
         easing: "ease",
       });
