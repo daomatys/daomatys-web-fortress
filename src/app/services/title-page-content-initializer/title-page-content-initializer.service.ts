@@ -8,6 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 
 
 export class TitlePageContentInitializerService {
+  
   private caseMessageSource = new BehaviorSubject( false );
   public caseCurrentPageIsTitle = this.caseMessageSource.asObservable();
 
