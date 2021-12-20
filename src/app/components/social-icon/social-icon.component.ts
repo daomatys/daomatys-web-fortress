@@ -1,14 +1,25 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  OnInit
+} from '@angular/core';
 
 import { MarkedSocialIconInterface } from './social-icon.interface';
+
 
 @Component({
   selector: 'app-social-icon',
   templateUrl: './social-icon.component.html',
-  styleUrls: ['./social-icon.component.scss']
+  styleUrls: [
+    './social-icon.component.scss'
+  ]
 })
 
+
 export class SocialIconComponent implements OnInit {
+
   @Input() socialIcon: MarkedSocialIconInterface;
   @Output() onMouseEnterTheFooterIcon = new EventEmitter<string>();
 

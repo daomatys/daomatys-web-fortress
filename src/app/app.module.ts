@@ -25,6 +25,7 @@ import { SocialIconComponent } from './components/social-icon/social-icon.compon
 
 import { TitlePageContentInitializerService } from './services/title-page-content-initializer/title-page-content-initializer.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,5 +58,6 @@ import { TitlePageContentInitializerService } from './services/title-page-conten
     AppComponent
   ]
 })
+
 
 export class AppModule {}
