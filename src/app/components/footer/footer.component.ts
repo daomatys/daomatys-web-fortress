@@ -5,13 +5,18 @@ import socialIconsItems from './footer.social-icons-collection';
 
 import { TitlePageContentInitializerService } from 'src/app/services/title-page-content-initializer/title-page-content-initializer.service';
 
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: [
+    './footer.component.scss'
+  ]
 })
 
-export class FooterComponent implements OnInit{
+
+export class FooterComponent implements OnInit {
+
   public socialIcons:SocialIconInterface[] = socialIconsItems;
   public changeableWord:string = 'call';
   public eyesState:boolean;

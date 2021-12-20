@@ -1,10 +1,14 @@
 import { Component, AfterViewInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-red-eyes',
   templateUrl: './red-eyes.component.html',
-  styleUrls: ['./red-eyes.component.scss']
+  styleUrls: [
+    './red-eyes.component.scss'
+  ]
 })
+
 
 export class RedEyesComponent implements AfterViewInit {
 
@@ -24,16 +28,18 @@ export class RedEyesComponent implements AfterViewInit {
     const applyAnimation = function applyAnimationForReal():void {
       const randomTime = Math.floor( Math.random() * Math.floor( 10000 ) );
 
-      const animation = coverage?.animate({
-        transform: [
-          "translateY(3px)",
-          "translateY(0px)"
-        ]
-      },
-      {
-        duration: 500,
-        easing: "ease",
-      });
+      const animation = coverage?.animate(
+        {
+          transform: [
+            "translateY(3px)",
+            "translateY(0px)"
+          ]
+        },
+        {
+          duration: 500,
+          easing: "ease",
+        }
+      );
 
       animation?.finished.then( () => setTimeout( applyAnimation, randomTime ) )
     }
