@@ -23,5 +23,5 @@ export class MainResumeComponent {
   public roadmapSamples: RoadmapSampleInterface[] = roadmapSamplesArray;
   public resumeBlocks: ResumeBlocksInterface[] = resumeBlocksArray;
 
-  constructor() { }
+  constructor() {}
 }
