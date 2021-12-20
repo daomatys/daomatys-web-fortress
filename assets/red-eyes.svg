@@ -13,11 +13,6 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <style>
-    #red-eyes__coverage {
-      transition: transform .05s ease;
-    }
-  </style>
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#ffffff"
@@ -51,13 +46,10 @@
        style="fill:#000705;fill-opacity:1;stroke-width:0.0700038"
        d="m 0,20.408111 v 6.989443 h 23.812499 v -6.989443 z" />
     <path
-       id="red-eyes__eye_left"
-       style="fill:#640a25;fill-opacity:1;stroke-width:0.104758"
-       d="M 0.01640723,20.408111 A 6.6145692,6.6145329 0 0 0 0,20.783015 a 6.6145692,6.6145329 0 0 0 6.6145756,6.614539 6.6145692,6.6145329 0 0 0 6.6145754,-6.614539 6.6145692,6.6145329 0 0 0 -0.0108,-0.374904 z" />
-    <path
-       id="red-eyes__eye_right"
-       style="fill:#640a25;fill-opacity:1;stroke-width:0.104758"
-       d="m 10.599756,20.408111 a 6.6145692,6.6145329 0 0 0 -0.01641,0.374904 6.6145692,6.6145329 0 0 0 6.614576,6.614539 6.6145692,6.6145329 0 0 0 6.614575,-6.614539 6.6145692,6.6145329 0 0 0 -0.01094,-0.374904 z" />
+       id="red-eyes__item"
+       style="fill:#640a25;fill-opacity:1;stroke-width:0.395936"
+       d="M 0.0625 0 A 24.999947 24.999809 0 0 0 0 1.4160156 A 24.999947 24.999809 0 0 0 25 26.416016 A 24.999947 24.999809 0 0 0 45.007812 16.402344 A 24.999947 24.999809 0 0 0 65 26.416016 A 24.999947 24.999809 0 0 0 90 1.4160156 A 24.999947 24.999809 0 0 0 89.958984 0 L 49.958984 0 L 40.0625 0 L 0.0625 0 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,20.408111)" />
     <path
        id="red-eyes__coverage"
        style="fill:#000705;fill-opacity:1;stroke-width:0.134438"

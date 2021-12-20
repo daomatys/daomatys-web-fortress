@@ -22,9 +22,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="1"
      showgrid="false"
-     inkscape:zoom="2"
-     inkscape:cx="136.25"
-     inkscape:cy="149.75"
+     inkscape:zoom="1"
+     inkscape:cx="76.5"
+     inkscape:cy="151.5"
      inkscape:window-width="1360"
      inkscape:window-height="745"
      inkscape:window-x="-8"
@@ -32,25 +32,18 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg31" />
   <path
-     id="rect519-29"
+     id="forest__light"
      style="fill:#064033;fill-opacity:1;stroke-width:1.01408"
      d="m -93.734,28 500,100 c -164.29991,31.24028 -333.984804,66.4693 -500,100 z"
      sodipodi:nodetypes="cccc" />
   <path
-     id="rect519-2"
+     id="forest__medium"
      style="fill:#03241c;fill-opacity:1;stroke-width:1.01408"
      d="m 406.266,78 -500,100 c 165.797096,15.71959 333.55071,33.18369 500,50 z"
      sodipodi:nodetypes="cccc" />
   <path
-     id="rect519"
+     id="forest__dark"
      style="fill:#000705;fill-opacity:1;stroke-width:1.00237"
      d="m -93.734,128 500,100 c -164.51643,0.21812 -334.170354,0.31977 -500,0 z"
      sodipodi:nodetypes="cccc" />
-  <rect
-     style="fill:none"
-     id="rect369"
-     width="500"
-     height="228"
-     x="-247.12149"
-     y="301.93118" />
 </svg>
