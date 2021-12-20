@@ -2,7 +2,7 @@ export default [
   {
     timestamp: "2013—2014",
     title: "Tomsk State University of Control Systems and Radioelectronics",
-    text: "Incomplete higher education"
+    text: "FACULTY OF INNOVATION TECHNOLOGIES, Mechatronics and Robotics bdp, incompleted"
   },
   {
     timestamp: "2011—2013",

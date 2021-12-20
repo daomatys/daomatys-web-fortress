@@ -4,7 +4,6 @@
 
 @media only screen and ( max-width: $breakFooterMin ) {
   .footer{
-    &__red-eyes,
     &__proposal {
       display: none;
     }
@@ -14,9 +13,11 @@
 @media only screen and ( max-width: $breakFooterAndResume ) {
   .footer {
     @include tabletOrientation;
+    position: relative;
 
     &__red-eyes {
       position: absolute;
+      bottom: 10%;
     }
   }
 }
