@@ -29,7 +29,7 @@ export const resumeBlocksArray = [
   {
     title: "hard skills",
     texts: [
-      "react+hooks",
+      "react/hooks",
       "angular",
       "sqilte3",
       "scss",
@@ -39,7 +39,7 @@ export const resumeBlocksArray = [
   {
     title: "tools",
     texts: [
-      "adobe ps+dw",
+      "adobe ps/dw",
       "inkscape",
       "vscode",
       "git cli",
