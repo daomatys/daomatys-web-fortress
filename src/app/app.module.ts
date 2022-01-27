@@ -43,7 +43,7 @@ import { TitlePageContentInitializerService } from './services/title-page-conten
       SocialIconComponent,
     RoadmapComponent,
       RoadmapSampleComponent
-   ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

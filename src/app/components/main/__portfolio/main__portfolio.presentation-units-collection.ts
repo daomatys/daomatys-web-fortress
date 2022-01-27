@@ -3,7 +3,8 @@ import {
   faHtml5,
   faCss3,
   faSass,
-  faNodeJs
+  faNodeJs,
+  faReact,
 } from '@fortawesome/free-brands-svg-icons';
 
 import { IconDefinition } from '@fortawesome/fontawesome-common-types';
@@ -70,8 +71,22 @@ const iconSqlite:SocialIconInterface = {
   href: 'https://www.sqlite.org/index.html'
 };
 
+const iconReact:SocialIconInterface = {
+  definition: faReact,
+  href: 'https://reactjs.org/'
+};
+
 
 export default [
+  {
+    title: 'todo-dodo-do',
+    text: 'experiments with hooks',
+    href: 'https://daomatys.github.io/todo-dodo-do/',
+    src:  'todo-dodo-do.png',
+    icons: [
+      iconReact
+    ]
+  },
   {
     title: 'metalamp layouts',
     text: 'ui-kit and landings',
