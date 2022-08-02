@@ -1,7 +1,7 @@
 export default [
   {
-    timestamp: "2021—2121",
-    title: "There should be your company name",
-    text: "There should be my trainee position in that company"
+    timestamp: "2022—NOW",
+    title: "D&A Systems",
+    text: "Engineer-programmer (Front-end development)"
   }
 ]
