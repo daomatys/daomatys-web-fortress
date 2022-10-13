@@ -5,11 +5,11 @@ export interface ResumeBlocksInterface {
 
 export const resumeBlocksArray = [
   {
-    title: "who am i",
+    title: "whoami",
     texts: [
-      "Matyskin Maxim, 26 yo",
-      "junior front-end developer",
-      "from seversk, tomsk region, russia"
+      "Matyskin Maxim, 27 yo",
+      "front-end developer",
+      "seversk, tomsk region, russia"
     ]
   },
   {
@@ -22,8 +22,8 @@ export const resumeBlocksArray = [
   {
     title: "programming languages",
     texts: [
-      "javascript",
-      "typescript"
+      "typescript",
+      "c#"
     ]
   },
   {
@@ -41,8 +41,8 @@ export const resumeBlocksArray = [
     texts: [
       "adobe ps/dw",
       "inkscape",
-      "vscode",
-      "git cli",
+      "vscodium",
+      "git/zsh",
       "figma"
     ]
   }
