@@ -79,19 +79,30 @@ const iconReact:SocialIconInterface = {
 
 export default [
   {
+    title: 'habland-donators-gui',
+    text:  'one click - one command',
+    href:  'https://daomatys.github.io/habland-donators-gui/',
+    src:   'habland-donators-gui.png',
+    icons: [
+      iconHTML5,
+      iconCSS3,
+      iconJS
+    ]
+  },
+  {
     title: 'todo-dodo-do',
-    text: 'experiments with hooks',
-    href: 'https://daomatys.github.io/todo-dodo-do/',
-    src:  'todo-dodo-do.png',
+    text:  'experiments with hooks',
+    href:  'https://daomatys.github.io/todo-dodo-do/',
+    src:   'todo-dodo-do.png',
     icons: [
       iconReact
     ]
   },
   {
     title: 'metalamp layouts',
-    text: 'ui-kit and landings',
-    href: 'https://daomatys.github.io/metalamp-fedsec-layouts',
-    src:  'metalamp-fedsec-layouts.png',
+    text:  'ui-kit and landings',
+    href:  'https://daomatys.github.io/metalamp-fedsec-layouts',
+    src:   'metalamp-fedsec-layouts.png',
     icons: [
       iconPug,
       iconSass,
@@ -100,9 +111,9 @@ export default [
   },
   {
     title: 'blackjack wut',
-    text: 'singleplayer web-casino',
-    href: 'https://daomatys.github.io/blackjack-wut/',
-    src:  'blackjack-wut.png',
+    text:  'singleplayer web-casino',
+    href:  'https://daomatys.github.io/blackjack-wut/',
+    src:   'blackjack-wut.png',
     icons: [
       iconHTML5,
       iconCSS3,
@@ -111,18 +122,18 @@ export default [
   },
   {
     title: 'bangkok express',
-    text: 'study project',
-    href: 'https://daomatys.github.io/jsbasic-20210520_overmaxcoast/',
-    src:  'bangkok-express.png',
+    text:  'study project',
+    href:  'https://daomatys.github.io/jsbasic-20210520_overmaxcoast/',
+    src:   'bangkok-express.png',
     icons: [
       iconJS
     ]
   },
   {
     title: 'voenkom bot',
-    text: 'echo-bot-entertainer',
-    href: 'https://t.me/vam_povistka_bot',
-    src:  'voenkom-bot.png',
+    text:  'echo-bot-entertainer',
+    href:  'https://t.me/vam_povistka_bot',
+    src:   'voenkom-bot.png',
     icons: [
       iconSqlite,
       iconNode

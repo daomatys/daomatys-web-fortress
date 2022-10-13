@@ -22,8 +22,7 @@ export const resumeBlocksArray = [
   {
     title: "programming languages",
     texts: [
-      "typescript",
-      "c#"
+      "typescript"
     ]
   },
   {
@@ -32,13 +31,15 @@ export const resumeBlocksArray = [
       "react/hooks",
       "angular",
       "sqilte3",
+      "axios",
       "scss",
-      "pug",
+      "pug"
     ]
   },
   {
     title: "tools",
     texts: [
+      "arch/manjaro",
       "adobe ps/dw",
       "inkscape",
       "vscodium",
